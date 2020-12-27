@@ -2,8 +2,9 @@
 
 ## git add & commit
 ```
-git commit -am "[commit message]"
 // Does not add untracked files, only updated files
+
+git commit -am "[commit message]"
 ```
 <br>
 
@@ -64,21 +65,27 @@ git push --tags
 ```
 <br>
 
-## use when you want to revert back to the HEAD but still save your changes
+## stash
 ```
+// use when you want to revert back to the HEAD but still save your changes
+
 git stash
 ```
 <br>
 
 
-## puts the changes you saved back in
+## stash apply
 ```
+// puts the changes you stashed back in
+
 git stash apply
 ```
 <br>
 
-## show list of saved stashes
+## stash list
 ```
+// show list of saved stashes
+
 git stash list
 ```
 <br>
@@ -111,6 +118,8 @@ git submodule update --recursive --remote ## use after
 
 ## remove file from history
 ```
+// useful if you accidentally commit a senstive file
+
 git filter-branch --force --index-filter "git rm --cached --ignore-unmatch <file path>" --prune-empty --tag-name-filter cat -- --all
 git push origin --force --all
 ```

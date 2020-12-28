@@ -1,1 +1,1 @@
-A collections of personal code notes and snippets.
+A collections of personal code notes and snippets. Will update frequently whenever I find a new interesting tips or tricks.

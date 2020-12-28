@@ -120,3 +120,20 @@ for (var item of list) {
 }
 ```
 <br>
+
+## Conditional (ternary) Operator
+```
+var age = 26;
+
+//old
+if (age >= 21) {
+  return 'Beer'
+} else {
+  return 'Juice'
+}
+
+// new
+var beverage = (age >= 21) ? "Beer" : "Juice";
+console.log(beverage); // "Beer"
+```
+<br>

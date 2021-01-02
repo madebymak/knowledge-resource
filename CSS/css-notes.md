@@ -18,7 +18,7 @@ ex:
 ```
 <br>
 
-## Avoid !importany Tag
+## Avoid !important Tag
 - the tag has the highest specificity of all CSS selectors
 - only way to override an important tag is to use another important tag
 
@@ -65,6 +65,35 @@ ex:
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
   padding: var(--main-padding);
+}
+```
+<br>
+
+## CSS Spinner
+```
+<div class="spinner"></div>
+```
+<br>
+
+```
+.spinner {
+    animation: spin 1.5s linear infinite;
+    border: 5px solid #EEE;
+    border-left-color: #00BCD4;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 ```
 <br>

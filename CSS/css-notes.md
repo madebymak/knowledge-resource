@@ -3,8 +3,11 @@
 ## CSS Naming Guide
 ```
 <container description name>__<parent group name>--<descriptive name>
+```
+<br>
 
-ex:
+Example:
+```
 <div class='box'>
   <div class='box__header'>
     <label class='box__header--title'></label>
@@ -94,6 +97,22 @@ ex:
     100% {
         transform: rotate(360deg);
     }
+}
+```
+<br>
+
+## Font Face Browser Support
+- custom fonts support across different browsers
+
+```
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 ```
 <br>

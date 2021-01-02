@@ -65,7 +65,7 @@ $(this).attr('data-id'); //jquery
 <br>
 
 ## Convert to Intergral (~~)
-- more efficent way to remove decimals
+- more efficient way to remove decimals
 ```
 // instead of
 math.round(math.random*50)
@@ -135,5 +135,32 @@ if (age >= 21) {
 // new
 var beverage = (age >= 21) ? "Beer" : "Juice";
 console.log(beverage); // "Beer"
+```
+<br>
+
+## Debugger
+- chrome browser will automatically stop at the point where the syntax shows up
+
+```
+if(something) {
+  debugger;
+}
+```
+<br>
+
+## Getting Value From Object
+```
+const object1 = {
+  a: 1,
+  b: 2,
+  c: 3
+}
+
+// old
+const a = object1.a;
+const b = object1.b;
+
+// new
+const {a , b, c} = object1
 ```
 <br>

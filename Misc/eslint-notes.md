@@ -3,7 +3,7 @@
 ## Setup Eslint
 - setup package.json if needed with `npm init`
 - install to eslint to local folder with `npm install eslint --save-dev`
-- setup eslint file with `npxeslint --init`
+- setup eslint file with `npx eslint --init`
 - use airbnb style and set format to be JSON
 
 <br>
@@ -24,7 +24,6 @@
     },
     "rules": {
         "indent": ["error", 4] // sets indent to 4
-        "linebreak-style": 0 // turns off LF vs CRLF
     }
 }
 ```

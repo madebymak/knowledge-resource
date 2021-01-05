@@ -54,6 +54,20 @@ const user = (first_name, last_name) => {
   return `Hi ${first_name} ${last_name}`;
 }
 ```
+Note: works differently with jQuery
+
+```
+// jQuery click event
+$button.on('click', function (e) {
+    console.log($(this));
+});
+
+// ES6 click event
+$button.on('click', (e) => {
+    var $this = $(e.currentTarget);
+    console.log($this);
+});
+```
 <br>
 
 ## Dom selector (click event)
@@ -100,6 +114,19 @@ var classes = {
 
 $(selectors.someSelector1).val() // jQuery
 $(div).addClass('classes.someClass1') // jQuery
+```
+<br>
+
+## Array Map
+- can be used instead of the classic `For...In` or `For...Of` loops
+- use `forEach` if you're not returning something
+```
+const someArray = [2, 3, 4, 5, 35]
+const someNewArray = someArray.map(someItem => {
+    return someItem * 2
+})
+
+console.log(someNewArray) // [4, 6, 8, 10, 70]
 ```
 <br>
 

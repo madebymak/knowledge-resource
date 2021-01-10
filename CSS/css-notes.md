@@ -56,6 +56,7 @@ Example:
 
 ## CSS Variables (Non-Preprocessors)
 - set variables by giving them a name preceded by two dashes
+- global variables are defined in the `:root` element
 - use variables with `var()`
 ```
 :root {

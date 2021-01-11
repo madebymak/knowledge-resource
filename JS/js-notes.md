@@ -137,6 +137,7 @@ const numbers = [1, 2, 3, 4, 5];
 numbers.forEach(number => console.log(number));
 
 ```
+<br>
 
 ## for..of Loop (ES6)
 - easier than using a for..in loop

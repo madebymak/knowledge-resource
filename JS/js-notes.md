@@ -200,3 +200,25 @@ const b = object1.b;
 const {a , b, c} = object1
 ```
 <br>
+
+## Destructing
+```
+// old
+let array = [1,2,3];
+let value1 = array[0]
+let value2 = array[1]
+let value3 = array[2]
+
+// new
+let { value1, value2, value3 } = array
+
+// you can do the same with objects
+let object = {
+	key1: value1,
+	key2: value2,
+	key3: value3
+}
+
+let {key1, key2, key3} = obj
+```
+<br>

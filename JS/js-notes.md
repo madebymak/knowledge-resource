@@ -134,7 +134,7 @@ console.log(someNewArray) // [4, 6, 8, 10, 70]
 ```
 const numbers = [1, 2, 3, 4, 5];
 
-numbers.forEach(number => console.log(number));
+numbers.forEach(number => console.log(number)); // 1,2,3,4,5
 
 ```
 <br>
@@ -201,7 +201,7 @@ const {a , b, c} = object1
 ```
 <br>
 
-## Destructing
+## Array/Object Destructing
 ```
 // old
 let array = [1,2,3];
@@ -222,3 +222,20 @@ let object = {
 let {key1, key2, key3} = obj
 ```
 <br>
+
+## Access Deeply Nested Objects
+```
+const user = {
+  firstName: "John",
+  lastName: "Doe",
+  family: {
+    sister: {
+      firstName: "Jane",
+    },
+  },
+};
+
+const { firstName } = user.family.sister;
+
+console.log(firstName); // Jane
+```

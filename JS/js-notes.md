@@ -1,15 +1,37 @@
 # Javascript Notes
 
-## Template Literal
+## Shortcut console.log()
+- use curly braces to return name values
 ```
-// template string for string concatenation (backticks are important!)
+let x = 1
+let y = 2
+let z = 3
 
+// old
+console.log('x:', x, 'y:', y, 'z:', z);
+
+// new
+console.log({x, y, z}) // x:1, y:2, z:3
+
+// won't work with nested variables
+let x = {
+	a: 1,
+	b: 2
+}
+
+console.log({ x.a }) // error
+```
+<br>
+
+## Template Literal
+- use template string for string concatenation (backticks are important!)
+
+```
 function greet(name) {
   return `Hi ${name}`;
 }
 
 // template string for objects
-
 var data = { a: 1, b: 2, c: 3 }
 console.log(`Show object: ${JSON.stringify(data)}`);
 ```
@@ -223,7 +245,7 @@ let {key1, key2, key3} = obj
 ```
 <br>
 
-## Access Deeply Nested Objects
+## Access Nested Objects
 ```
 const user = {
   firstName: "John",
@@ -239,3 +261,4 @@ const { firstName } = user.family.sister;
 
 console.log(firstName); // Jane
 ```
+<br>

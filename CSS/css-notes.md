@@ -117,3 +117,18 @@ Example:
 }
 ```
 <br>
+
+## Hiding Elements
+```
+// element is hidden and won't take up space
+class1 {
+	display: none;
+}
+
+// element is hidden but will still take up space
+class2 {
+	visibility: hidden
+}
+
+```
+<br>

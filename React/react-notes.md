@@ -25,7 +25,7 @@ const MyComponent = props => <div>{props.content}</div>;
 - runs after every render unless a second argument is provided
 
 ```
-// state change example
+// on state change example
 function ThreeCounts() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
@@ -48,3 +48,20 @@ function ThreeCounts() {
 ```
 <br>
 
+## Functional Component
+- also known as Stateless component
+- usually simple JS functions that return HTML UI
+- can accept props and return JSX
+- no render method
+- usually defined using arrow functions (regular functions work as well)
+```
+const Greeting = (props) => {
+	return (
+		<div>
+			Hello {props.name}!
+		</div>
+	)
+}
+
+export default Greeting;
+```

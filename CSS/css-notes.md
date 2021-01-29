@@ -132,3 +132,21 @@ class2 {
 
 ```
 <br>
+
+## Box-Sizing
+- changes the way width gets calculated
+```
+// adds padding and border to width of the child element
+class1 {
+	padding: 25px;
+	width: 100%;
+	border: 5px solid #FFF;
+	box-sizing: content-box;
+}
+
+// padding and width are included in the width of the child element
+class2 {
+	box-sizing: border-box;
+}
+```
+<br>

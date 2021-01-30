@@ -232,7 +232,7 @@ let value2 = array[1]
 let value3 = array[2]
 
 // new
-let { value1, value2, value3 } = array
+const { value1, value2, value3 } = array
 
 // you can do the same with objects
 let object = {
@@ -241,7 +241,14 @@ let object = {
 	key3: value3
 }
 
-let {key1, key2, key3} = obj
+const {key1, key2, key3} = obj
+
+// deconstruct in function
+function count(object) {
+	const {key1, key2, key3} = object;
+
+	console.log(key1, key2, key3) // value1, value2, value3
+}
 ```
 <br>
 
@@ -262,3 +269,10 @@ const { firstName } = user.family.sister;
 console.log(firstName); // Jane
 ```
 <br>
+
+## Get First Element of an Array
+```
+const arr = [1,2,3,4,5]
+const firstElement = arr.shift();
+
+console.log(firstElement) // 1

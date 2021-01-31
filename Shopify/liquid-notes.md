@@ -7,8 +7,7 @@
 {% render 'snippet-name' %}
 
 // you can pass data to the snippet via a variable
-{% render 'snippet-name', variable: data %}
-
+{% render 'snippet-name', variable: data %}å
 ```
 <br>
 
@@ -36,3 +35,30 @@
 {{ request.page_type }} // index
 ```
 <br>
+
+## Cart AJAX
+- use `/cart.js` to get cart JSON
+```
+jQuery.ajax({
+	url: '/cart.js',
+	dataType: 'json'
+});
+```
+<br>
+
+- use `/cart/change.js` to update cart line item properties
+```
+jQuery.ajax({
+	url: '/cart/change.js',
+	dataType: 'json',
+	type: 'POST',
+	data: {
+		'line': item.key, // use cart line item key
+		'quantity: item.quantity, // defaults to 1 if not set
+		'properties': {
+			// change properties (will OVERWRITE ALL line item properties)
+		}
+
+	}
+})
+```

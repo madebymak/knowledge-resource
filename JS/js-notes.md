@@ -276,3 +276,16 @@ const arr = [1,2,3,4,5]
 const firstElement = arr.shift();
 
 console.log(firstElement) // 1
+```
+<br>
+
+## Filter Array
+```
+const numberArr = [1,2,3,4,5,6,7,8,9,10];
+
+const under6 = numberArr.filter((val, index, array) => {
+	return val < 6;
+});
+
+console.log(under6); // 1,2,3,4,5
+```

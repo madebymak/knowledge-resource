@@ -152,7 +152,7 @@ class2 {
 ```
 <br>
 
-## Cominator Selectors
+## Combinator Selectors
 
 ```
 // elements that have both classes (chained classes)

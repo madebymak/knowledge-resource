@@ -74,12 +74,13 @@ Example:
 <br>
 
 ## CSS Spinner
+- pure CSS spinner
+- easier to use icon (ex: font awesome) if possible
 ```
+// html
 <div class="spinner"></div>
-```
-<br>
 
-```
+// CSS
 .spinner {
     animation: spin 1.5s linear infinite;
     border: 5px solid #EEE;
@@ -147,6 +148,31 @@ class1 {
 // padding and width are included in the width of the child element
 class2 {
 	box-sizing: border-box;
+}
+```
+<br>
+
+## Cominator Selectors
+
+```
+// elements that have both classes (chained classes)
+.nav-item.selected {
+	color: #fff;
+}
+
+// select matching elements inside parent (descendant selector)
+.container img {
+	border: 2px solid;
+}
+
+// only direct descendant of parent
+.nav > li {
+	padding: 10px;
+}
+
+// select first element next to former element (adjacent sibling selector)
+.list-item + .list-item {
+	color: #FFF;
 }
 ```
 <br>

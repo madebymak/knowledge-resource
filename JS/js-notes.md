@@ -289,3 +289,14 @@ const under6 = numberArr.filter((val, index, array) => {
 
 console.log(under6); // 1,2,3,4,5
 ```
+<br>
+
+## Includes
+- checks if a value already exists in an array
+```
+const groceryList = ['eggs', 'milk', 'bread', 'mushrooms', 'pasta'];
+const alreadyAdded = groceryList.includes('bread');
+
+console.log(alreadyAdded) // true
+```
+<br>

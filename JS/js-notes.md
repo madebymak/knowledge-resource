@@ -300,3 +300,17 @@ const alreadyAdded = groceryList.includes('bread');
 console.log(alreadyAdded) // true
 ```
 <br>
+
+## Asynchronous AJAX calls
+- use `.done()` to pause code until AJAX call is finished
+```
+const getData = () => {
+	// AJAX call
+};
+
+getData.done((response) => {
+	// do something
+})
+```
+<br>
+

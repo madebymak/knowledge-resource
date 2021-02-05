@@ -75,8 +75,11 @@ function user(first_name, last_name) {
 const user = (first_name, last_name) => {
   return `Hi ${first_name} ${last_name}`;
 }
+
+// short hand single argument
+const user = first_name => console.log(`Hi ${first_name}`);
 ```
-Note: works differently with jQuery
+Note: keyword (`this`) works differently with jQuery
 
 ```
 // jQuery click event
@@ -303,14 +306,41 @@ console.log(alreadyAdded) // true
 
 ## Asynchronous AJAX calls
 - use `.done()` to pause code until AJAX call is finished
+- use `.catch()` for error handling
 ```
 const getData = () => {
 	// AJAX call
 };
 
-getData.done((response) => {
-	// do something
-})
+getData()
+	.done((response) => {
+		// do something
+	})
+	.catch(()) => console.log(error));
 ```
 <br>
 
+## Async/Await
+- `async` always returns a promise
+- `await` makes code wait until promise is finished (can only be used with 
+`async`)
+- use `try...catch` to handle errors
+
+```
+const apiUrl = '' // api url
+
+const fetchData = async () => {
+	try {
+		const resp = await fetch(apiUrl);
+		const data = resp.json();
+	} catch (error) {
+		console.log({error});
+	}
+}
+
+console.log(fetchData());
+
+// can use with .then() method
+fetchData().then((response) => {console.log({response})})
+```
+<br>

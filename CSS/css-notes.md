@@ -176,3 +176,12 @@ class2 {
 }
 ```
 <br>
+
+## Centering Using Flexbox
+```
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```

@@ -282,7 +282,26 @@ console.log(firstElement) // 1
 ```
 <br>
 
+## Find in Array
+- use to find/return a single value
+- returns `undefined` if not found
+```
+const data = {
+	'name': 'Jon',
+	'name': 'Bob',
+	'name': 'Dave'
+}
+
+const findBob = data.find(item => item.name == 'Bob');
+console.log(findBob) // true
+
+const findJim = data.find(item => item.name == 'Jim')'
+console.log(findBob) // undefined
+```
+
+
 ## Filter Array
+- use when you need to find/return multiple values
 ```
 const numberArr = [1,2,3,4,5,6,7,8,9,10];
 
@@ -321,10 +340,11 @@ getData()
 <br>
 
 ## Async/Await
+- more elegant way to do API calls
 - `async` always returns a promise
-- `await` makes code wait until promise is finished (can only be used with 
+- `await` makes code wait until promise is finished (can only be used with
 `async`)
-- use `try...catch` to handle errors
+- use `try...catch` for error handling
 
 ```
 const apiUrl = '' // api url

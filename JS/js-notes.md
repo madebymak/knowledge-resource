@@ -364,3 +364,32 @@ console.log(fetchData());
 fetchData().then((response) => {console.log({response})})
 ```
 <br>
+
+## Spread Syntax
+- denoted by three dots `...`
+- commonly used to make shallow copies of objects
+- easier to read and understand
+```
+// copy an array
+const arr1 = ['h','e','l','l','o']
+const copyArr = [...arr1]
+
+console.log(copyArr) // ['h','e','l','l','o']
+
+// insert one array into another
+
+const list1 = ['eggs', 'bread', 'milk'];
+const list2 = ['soup', 'chicken', ... list1];
+
+console.log(list2) // ['soup', 'chicken', 'eggs', 'bread', 'milk']
+
+// array to arguments
+const multiply = (num1, num2, num3) => {
+	return num1 * num2 * num3
+}
+
+let numbers = [1,2,3];
+
+multiply(...numbers); // 6
+```
+<br>

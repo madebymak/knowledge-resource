@@ -20,6 +20,13 @@ let x = {
 }
 
 console.log({ x.a }) // error
+
+// using destructuring object syntax
+const { log, warn, error } = console;
+
+log('log to browser console');
+warn('log warning');
+error('log error);
 ```
 <br>
 
@@ -244,7 +251,7 @@ let object = {
 	key3: value3
 }
 
-const {key1, key2, key3} = obj
+const {key1, key2, key3} = obj // use the key to set the variable
 
 // deconstruct in function
 function count(object) {
@@ -252,6 +259,13 @@ function count(object) {
 
 	console.log(key1, key2, key3) // value1, value2, value3
 }
+
+// variable declaration rule
+{ key1 } = object // Uncaught SyntaxError: Unexpected token '='
+
+// use
+let key1;
+({ key1 = object});
 ```
 <br>
 
@@ -377,9 +391,8 @@ const copyArr = [...arr1]
 console.log(copyArr) // ['h','e','l','l','o']
 
 // insert one array into another
-
 const list1 = ['eggs', 'bread', 'milk'];
-const list2 = ['soup', 'chicken', ... list1];
+const list2 = ['soup', 'chicken', ...list1];
 
 console.log(list2) // ['soup', 'chicken', 'eggs', 'bread', 'milk']
 
@@ -391,5 +404,15 @@ const multiply = (num1, num2, num3) => {
 let numbers = [1,2,3];
 
 multiply(...numbers); // 6
+
+// update properties in an object
+const user = {
+	'name': 'jon doe',
+	'age': 28
+}
+
+const updateUser =  {...user, name: 'jim doe'};
+
+console.log(updatedUser) // { name: 'jim doe', age: 28}
 ```
 <br>

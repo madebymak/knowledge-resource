@@ -216,23 +216,6 @@ if(something) {
 ```
 <br>
 
-## Getting Value From Object
-```
-const object1 = {
-  a: 1,
-  b: 2,
-  c: 3
-}
-
-// old
-const a = object1.a;
-const b = object1.b;
-
-// new
-const {a , b, c} = object1
-```
-<br>
-
 ## Array/Object Destructing
 ```
 // old

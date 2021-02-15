@@ -35,20 +35,11 @@ Example:
   padding-bottom: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-  border-width: 1px;
-  border-style: solid:
-  border-color: black;
 }
 
 // good
 .article-container {
   padding: 10px 15px 20px 15px;
-  margin: 10px 15px;
-  border: 1px solid black;
 }
 
 ```
@@ -105,6 +96,7 @@ Example:
 
 ## Font Face Browser Support
 - custom fonts support across different browsers
+- be sure to include WOFF or WOFF2 version (TTF or OTF are not webfont file types)
 
 ```
 @font-face {

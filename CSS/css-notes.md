@@ -177,3 +177,54 @@ class2 {
   align-items: center;
 }
 ```
+<br>
+
+## CSS Arrows
+```
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+```
+<br>
+
+## Flexbox Wrap
+- useful for getting child elements to stack nicely on mobile view
+```
+<div class="parent">
+	<button class="child">Button 1</button>
+	<button class="child">Button 2</button>
+	<button class="child">Button 3</div>
+</div>
+
+// CSS
+
+.parent {
+	display: flex;
+	flex-wrap: wrap;
+	width: 300px;
+}
+```
+<br>

@@ -3,6 +3,7 @@
 ## Function Declarations & Arrow Functions
 - react function component returns JSX
 - primary benefit of arrow functions is their succinctness (clear, precise expression)
+-  React function components are written with pascal casing (ex: MyComponent)
 ```
 // Function declaration syntax
 function MyComponent(props) {
@@ -65,3 +66,21 @@ const Greeting = (props) => {
 
 export default Greeting;
 ```
+<br>
+
+## Set State
+- use `setState()` to update the value in a state object
+- will cause the component to re-render if there is a change
+```
+render() {
+	const handleClick = () => {
+		this.setState({brand: 'Toyota'});
+	}
+
+	return (
+		<div>
+			<p>{this.state.brand}</p>
+			<button onClick={handleClick}>Click</button>
+		</div>
+	);
+}

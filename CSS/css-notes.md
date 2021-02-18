@@ -246,3 +246,21 @@ class2 {
 	</style>
 
 ```
+<bv>
+
+## REM Font Sizing
+- uses the root HTML element font size
+- best to use percentage when setting the root font size
+- default font size is usually 16px so if we set the body font-size to 62.5% then 1rem will equal 10px
+
+```
+body {
+	font-size: 62.5%; // 10px
+}
+
+p {
+	font-size: 1.2rem // sets p tag size to 12px
+}
+```
+<br>
+

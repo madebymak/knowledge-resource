@@ -228,3 +228,21 @@ class2 {
 }
 ```
 <br>
+
+## Disable Hover on Touch Devices
+- use JS to check
+```
+	<script>
+		var isTouch = 'ontouchstart' in window;
+
+		// adds class to HTML container
+		document.documentElement.className += isTouch?' touch ':' no-touch ';
+	</script>
+
+	<style>
+		.no-touch .hover-class {
+			// hover effect on non touch devices
+		}
+	</style>
+
+```

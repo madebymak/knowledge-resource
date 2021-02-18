@@ -248,12 +248,15 @@ class2 {
 ```
 <bv>
 
-## REM Font Sizing
-- uses the root HTML element font size
-- best to use percentage when setting the root font size
-- default font size is usually 16px so if we set the body font-size to 62.5% then 1rem will equal 10px
+## REM Sizing
+- can be used for any type of size measurements (font, width, height, etc)
+- uses the root HTML element as the relative size
+- best to use percentage when setting the root size
+- ex: default font size is usually 16px so if we set the body font-size to 62.5% then 1rem will equal 10px
 
 ```
+Ex: default font size is usually 16px so if we set the body font-size to 62.5% then 1rem will equal 10px
+
 body {
 	font-size: 62.5%; // 10px
 }

@@ -267,3 +267,14 @@ p {
 ```
 <br>
 
+## Text Shortening w/ Dots
+- cut off text with 3 dots if to wide for parent div
+```
+.text-box {
+	max-width: 150px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+```
+<br>

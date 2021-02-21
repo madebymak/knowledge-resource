@@ -84,3 +84,25 @@ render() {
 		</div>
 	);
 }
+```
+<br>
+
+## JSX
+- combines JS and HTML elements
+- multiple lines must be wrapped in parentheses
+- you can write JS expressions in curly braces
+- HTML code must be wrapped in one parent element
+- use `className` instead of `class` in HTML attributes
+```
+const myList = (
+	<ul className='list-class'>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+);
+
+let multiplyNum = <h1>3x3 = {3 * 3}</h1>; // renders as <h1>3x3 = 9</h1>
+```
+<br>
+

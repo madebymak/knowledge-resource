@@ -337,7 +337,7 @@ getData()
 <br>
 
 ## Async/Await
-- more elegant way to do API calls
+- more elegant way to do promises (syntactic sugar)
 - `async` always returns a promise
 - `await` makes code wait until promise is finished (can only be used with
 `async`)
@@ -399,3 +399,20 @@ const updateUser =  {...user, name: 'jim doe'};
 console.log(updatedUser) // { name: 'jim doe', age: 28}
 ```
 <br>
+
+## Storing to Local Storage
+- useful for storing data that can be used else where
+- use `setItem()` to add key and value to localStorage
+- use `getItem()` to retrieve item
+- `removeItem()` to remove an item by key
+- `clear()` to clear all localStorage
+```
+// save current page to localStorage
+	let currentPage = window.location.pathname;
+	localStorage.setItem('savePage', currentPage);
+
+// retrieve key/value
+	const prevPage = localStorage.getItem(savePage);
+```
+<br>
+

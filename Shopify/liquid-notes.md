@@ -62,3 +62,17 @@ jQuery.ajax({
 	}
 })
 ```
+<br>
+
+## Increase Pagnination Limit
+- Shopify limits pagination to 50 items by default
+- we can increase the number by adding using the `pagination` syntax
+```
+// increases pagination to 100 from 50
+{% paginate collection.products by 100 %}
+	{% for product in collection.products %}
+		{{ product.handle }}
+	{% endfor %}
+{% endpaginate %}
+```
+<br>

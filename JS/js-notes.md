@@ -416,3 +416,18 @@ console.log(updatedUser) // { name: 'jim doe', age: 28}
 ```
 <br>
 
+## Passing Arguements as Objects
+- easier to tell what is value is being passed to which arguement
+- order doesn't matter anymore
+```
+const createUser = ({ username, name, age, birthday }) => {
+	// create user
+};
+
+createUser({
+	age: 37,
+	username: 'DoubleJ',
+	name: 'Jim Jones',
+	birthday: '1/1/1984'
+});
+

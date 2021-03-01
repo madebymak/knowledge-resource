@@ -212,6 +212,7 @@ class2 {
 
 ## Flexbox Wrap
 - useful for getting child elements to stack nicely on mobile view
+- 
 ```
 <div class="parent">
 	<button class="child">Button 1</button>
@@ -278,3 +279,37 @@ p {
 }
 ```
 <br>
+
+## Position Sticky
+- `postion: sticky` won't work if parent/ancestor has `overflow` properties
+
+<br>
+
+## Soft Background Color
+- consistent colors on any background
+- use rgba with opacity and a pseudo class
+```
+.circle {
+	position: relative;
+	color: #8F44FD;
+	background: rgba(143, 68, 253, 0.1);
+	width: 100px;
+	text-align: center;
+	border: 1px solid;
+	padding: 10px 0;
+	border-radius: 10px;
+}
+
+// pseudo class
+.circle:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+```
+<br>
+

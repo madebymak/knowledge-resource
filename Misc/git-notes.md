@@ -73,7 +73,6 @@ git stash
 ```
 <br>
 
-
 ## stash apply
 ```
 // puts the changes you stashed back in
@@ -117,10 +116,17 @@ git submodule update --recursive --remote ## use after
 <br>
 
 ## remove file from history
+- useful if you accidentally commit a senstive file and want it removed
 ```
-// useful if you accidentally commit a senstive file
-
 git filter-branch --force --index-filter "git rm --cached --ignore-unmatch <file path>" --prune-empty --tag-name-filter cat -- --all
 git push origin --force --all
+```
+<br>
+
+## Add Files To Previous Commit
+- you can add more files to a previous commit with `--amend`
+```
+git add <files>
+git commit --amend 
 ```
 <br>

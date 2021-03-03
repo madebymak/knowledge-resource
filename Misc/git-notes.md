@@ -130,3 +130,9 @@ git add <files>
 git commit --amend 
 ```
 <br>
+
+## Edit a Commit Message
+```
+git commit --amend -m "New message"
+```
+<br>

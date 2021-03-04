@@ -16,3 +16,24 @@
 }
 
 ```
+<br>
+
+## Mixins
+- allows you copy all the properties of a class to another
+- use `@include` to copy to another class
+- cannot add extra properties like with `@extend`
+```
+@mixin heading-font {
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+h1 {
+	@include heading-font
+}
+
+h2 {
+	@include heading-font
+}
+```
+<br>

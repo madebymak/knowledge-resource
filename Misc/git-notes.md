@@ -136,3 +136,13 @@ git commit --amend
 git commit --amend -m "New message"
 ```
 <br>
+
+## Undo Local Commits
+```
+// undo last two commits but keep the changes
+git reset HEAD~2
+
+// undo last two commits and discard changes
+git reset --hard HEAD~2
+```
+<br>

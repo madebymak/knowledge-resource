@@ -430,4 +430,17 @@ createUser({
 	name: 'Jim Jones',
 	birthday: '1/1/1984'
 });
+```
+<br>
 
+## Avoid Unnecessary Variables
+- don't create new variables if you don't plan on reusing later
+```
+// jQuery example
+let user = firstName + ' ' + lastName;
+$('.user-info').append(user);
+
+// do instead
+$('.user-info').append(firstName + ' ' + lastName);
+```
+<br>

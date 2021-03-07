@@ -21,10 +21,19 @@ Example:
 ```
 <br>
 
-## Avoid !important Tag
+## Avoid Using !important Tag
 - the tag has the highest specificity of all CSS selectors
 - only way to override an important tag is to use another important tag
+```
+.some-class {
+	color: white;
+}
 
+// will make color red always
+.some-class {
+	color: red !important;
+}
+```
 <br>
 
 ## Use Shorthands
@@ -114,12 +123,12 @@ Example:
 ## Hiding Elements
 ```
 // element is hidden and won't take up space
-class1 {
+.class1 {
 	display: none;
 }
 
 // element is hidden but will still take up space
-class2 {
+.class2 {
 	visibility: hidden
 }
 
@@ -130,7 +139,7 @@ class2 {
 - changes the way width gets calculated
 ```
 // adds padding and border to width of the child element
-class1 {
+.class1 {
 	padding: 25px;
 	width: 100%;
 	border: 5px solid #FFF;
@@ -138,7 +147,7 @@ class1 {
 }
 
 // padding and width are included in the width of the child element
-class2 {
+.class2 {
 	box-sizing: border-box;
 }
 ```
@@ -212,7 +221,6 @@ class2 {
 
 ## Flexbox Wrap
 - useful for getting child elements to stack nicely on mobile view
-- 
 ```
 <div class="parent">
 	<button class="child">Button 1</button>
@@ -221,7 +229,6 @@ class2 {
 </div>
 
 // CSS
-
 .parent {
 	display: flex;
 	flex-wrap: wrap;
@@ -245,9 +252,8 @@ class2 {
 			// hover effect on non touch devices
 		}
 	</style>
-
 ```
-<bv>
+<br>
 
 ## REM Sizing
 - can be used for any type of size measurements (font, width, height, etc)
@@ -313,3 +319,13 @@ p {
 ```
 <br>
 
+## Stop Image From Stretching
+- use `object-fit: cover` to stop image stretching
+```
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover
+}
+```
+<br>

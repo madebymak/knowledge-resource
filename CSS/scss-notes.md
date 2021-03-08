@@ -37,3 +37,24 @@ h2 {
 }
 ```
 <br>
+
+## If & If Else Statements
+- can be used with mixins and functions
+- checks against booleans or null values
+```
+@mixin avatar($size, $circle: false) {
+	width: $size;
+	height: $size;
+
+	@if $circle {
+		border-radius: $size / 2;
+	} else {
+		// do something else
+	}
+}
+
+.profile-img {
+	@include avatar(100px, true);
+}
+```
+<br>

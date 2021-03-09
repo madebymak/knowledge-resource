@@ -329,3 +329,14 @@ img {
 }
 ```
 <br>
+
+## Media Queries
+```
+@media screen and (min-width: 300px) {
+	// do something
+}
+
+// min and max range
+@media screen and (min-width: 300px) and (max-width: 1400px) {
+	// do something
+}

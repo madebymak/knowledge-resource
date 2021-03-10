@@ -340,3 +340,20 @@ img {
 @media screen and (min-width: 300px) and (max-width: 1400px) {
 	// do something
 }
+```
+<br>
+
+## Grayscale Filter
+- converts image to grayscale
+```
+img {
+	filter: grayscale(100%);
+	transition: filter 0.5
+}
+
+// show full color on hover
+img:hover {
+	filter: grayscale(0;
+}
+```
+<br>

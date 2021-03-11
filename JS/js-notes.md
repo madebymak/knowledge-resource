@@ -444,3 +444,19 @@ $('.user-info').append(user);
 $('.user-info').append(firstName + ' ' + lastName);
 ```
 <br>
+
+## Object Iterations
+- `Object.keys()` returns array of keys
+- `Object.entries()` returns array of keys/pairs
+- `Object.values()` returns array of values
+```
+let user = {
+	name: 'Jon',
+	age: 30
+}
+
+Object.keys(user); // ['name', 'age']
+Object.values(user); // ['Jon', 30]
+Object.entries(user); // [ ['name', 'Jon'], ['age', 30] ]
+```
+<br>

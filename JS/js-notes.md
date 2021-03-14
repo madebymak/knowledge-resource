@@ -460,3 +460,18 @@ Object.values(user); // ['Jon', 30]
 Object.entries(user); // [ ['name', 'Jon'], ['age', 30] ]
 ```
 <br>
+
+## Dynamic Object Keys
+```
+const user = {
+	name: 'Jon Doe'
+}
+
+console.log(user.name) // Jon Doe
+console.log(user['name']) // Jon Doe
+
+// alternative way
+obj_prop = 'name';
+console.log(user[obj_prop]) // Jon Doe
+```
+<br>

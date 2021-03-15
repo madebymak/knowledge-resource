@@ -19,9 +19,7 @@
 <br>
 
 ## Mixins
-- allows you copy all the properties of a class to another
-- use `@include` to copy to another class
-- cannot add extra properties like with `@extend`
+- allows you copy all the properties of a class to another using `@include`
 ```
 @mixin heading-font {
 	font-family: sans-serif;
@@ -34,6 +32,19 @@ h1 {
 
 h2 {
 	@include heading-font
+}
+
+// can accept arguements like a function
+@mixin fontStyle($font, $size, $weight, $lineHeight, $textAlign) {
+	font-family: $font;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $lineHeight;
+	text-align: $textAlign;
+}
+
+p {
+	@include fontStyle(Sans-serif, 18px, bold, 55, center);
 }
 ```
 <br>

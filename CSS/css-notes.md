@@ -131,7 +131,6 @@ Example:
 .class2 {
 	visibility: hidden
 }
-
 ```
 <br>
 
@@ -188,6 +187,21 @@ Example:
 ```
 <br>
 
+## Centering Using Absolute Position
+```
+.parent {
+	position: relative;
+}
+
+.child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+```
+<br>
+
 ## CSS Arrows
 ```
 .arrow {
@@ -240,18 +254,18 @@ Example:
 ## Disable Hover on Touch Devices
 - use JS to check
 ```
-	<script>
-		var isTouch = 'ontouchstart' in window;
+<script>
+	var isTouch = 'ontouchstart' in window;
 
-		// adds class to HTML container
-		document.documentElement.className += isTouch?' touch ':' no-touch ';
-	</script>
+	// adds class to HTML container
+	document.documentElement.className += isTouch?' touch ':' no-touch ';
+</script>
 
-	<style>
-		.no-touch .hover-class {
-			// hover effect on non touch devices
-		}
-	</style>
+<style>
+	.no-touch .hover-class {
+		// hover effect on non touch devices
+	}
+</style>
 ```
 <br>
 

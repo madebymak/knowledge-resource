@@ -371,3 +371,38 @@ img:hover {
 }
 ```
 <br>
+
+## Nth-Child Selectors
+- used target specfic child elements within the same parent element
+```
+// change color of 2nd p element
+p:nth-child(2) {
+	color: red;
+}
+
+// change color of all odd child elements
+p:nth-child(odd) {
+	color: red;
+}
+
+// change color of all even child elements
+p:nth-child(even) {
+	color: red;
+}
+
+// change color of first child
+p:last-child {
+	color: red;
+}
+
+// change color of last child
+p:last-child {
+	color: red;
+}
+
+// change color if there's only one child
+p:only-child {
+	color: red;
+}
+```
+<br>

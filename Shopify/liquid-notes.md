@@ -76,3 +76,17 @@ jQuery.ajax({
 {% endpaginate %}
 ```
 <br>
+
+## Upcase/Downcase String
+- quicker to transform case in liquid than with CSS or JS
+- useful for theme customization header text settings
+```
+<p>UPPERCASE THIS TEXT</p>
+
+// better way
+{% 'uppercase this text' | upcase %}
+
+{% assign lowercaseString = 'AbCdEfG' | downcase %}
+{{ lowercaseString }} // abcdefg
+```
+<br>

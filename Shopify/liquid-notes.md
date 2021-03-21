@@ -56,9 +56,8 @@ jQuery.ajax({
 		'line': item.key, // use cart line item key
 		'quantity: item.quantity, // defaults to 1 if not set
 		'properties': {
-			// change properties (will OVERWRITE ALL line item properties)
+			// NOTE: changing properties (will OVERWRITE ALL line item properties)
 		}
-
 	}
 })
 ```
@@ -88,5 +87,22 @@ jQuery.ajax({
 
 {% assign lowercaseString = 'AbCdEfG' | downcase %}
 {{ lowercaseString }} // abcdefg
+```
+<br>
+
+## Section Settings Iteration
+- use bracket selection to loop through section/block settings
+```
+{% for index in (1..4)%}
+	{% assign colImg = "column_img_" | append: index %}
+	{% assign colText = "column_text_" | append: index %}
+
+	<div>
+		<img src="{{ section.settings[colImg] | img_url }}">
+		<div>
+			{{ section.settings[colText] }}
+		</div>
+	</div>
+{% endfor %}
 ```
 <br>

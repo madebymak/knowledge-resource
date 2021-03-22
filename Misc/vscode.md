@@ -21,3 +21,27 @@
 ## Close Current Pane
 - `cmd + w` to close current pane
 
+<br>
+
+## Import Path Shortcut
+- reduce long relative import paths by mapping keywords
+```
+// create jsconfig.json in home directory
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"paths": {
+			"@components/*": ["components/*"],
+			"@styles/*": ["styles/*"],
+			"@libs/*": ["libs/*"],
+		}
+	}
+}
+
+// js file
+import styles from '../../../styles/style.css'
+
+// new way
+import styles from '@styles';
+```
+<br>

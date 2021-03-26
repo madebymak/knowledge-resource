@@ -45,3 +45,8 @@ import styles from '../../../styles/style.css'
 import styles from '@styles';
 ```
 <br>
+
+## Focusing Explorer
+- `cmd + 0` to focus on the explorer file panel
+- navigate using up/down arrows and `enter` to view/open file
+<br>

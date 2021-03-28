@@ -106,3 +106,16 @@ jQuery.ajax({
 {% endfor %}
 ```
 <br>
+
+## Remove Map From Order Status Page
+- you can use either CSS or jQuery to remove the map from the order status page
+```
+// CSS
+  .map {display:none }
+
+// jQuery
+if(Checkout && Checkout.$ && Checkout.$.fn) {
+	Checkout.$('.map[data-mapbox]').parent().remove();
+}
+```
+<br>

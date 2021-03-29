@@ -119,3 +119,22 @@ if(Checkout && Checkout.$ && Checkout.$.fn) {
 }
 ```
 <br>
+
+## Create Array
+- you can create an array in liquid by joining string and then splitting
+```
+{% assign variantIdList = "" %}
+
+// loop through object and add to list
+{% for variant in product.variants %}
+		{% assign variantIdList = variantIdList | append: variant.id | append: "," %}
+{% endfor %}
+
+// split list into an array
+{% assign variantIdList = variantIdList | split: "," %}
+
+// loop through variant id list
+{% for id in variantIdList %}
+	{{ id }}
+{% endfor %}
+```

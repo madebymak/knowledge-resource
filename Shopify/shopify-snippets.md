@@ -53,6 +53,36 @@ jQuery.ajax({
 			// NOTE: changing properties (will OVERWRITE ALL line item properties)
 		}
 	}
+});
+```
+<br>
+
+- use `/cart/add.js` to add multiple products to cart
+```
+var data = [
+	{
+		'quantity': 1,
+		'id': 123
+	},
+	{
+		'quantity': 1,
+		'id': 456
+	},
+	{
+		'quantity': 1,
+		'id': 789
+	},
+]
+
+// jQuery
+$.post('/cart/add.json', { // using add.json to avoid SyntaxError
+	items: data
 })
+.done(function () {
+	console.log("success");
+})
+.fail(function () {
+	console.log("error");
+});
 ```
 <br>

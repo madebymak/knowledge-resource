@@ -2,8 +2,7 @@
 
 ## git add & commit
 ```
-// Does not add untracked files, only updated files
-
+// does not add untracked files, only updated files
 git commit -am "[commit message]"
 ```
 <br>
@@ -68,7 +67,6 @@ git push --tags
 ## stash
 ```
 // use when you want to revert back to the HEAD but still save your changes
-
 git stash
 ```
 <br>
@@ -76,7 +74,6 @@ git stash
 ## stash apply
 ```
 // puts the changes you stashed back in
-
 git stash apply
 ```
 <br>
@@ -84,7 +81,6 @@ git stash apply
 ## stash list
 ```
 // show list of saved stashes
-
 git stash list
 ```
 <br>
@@ -146,3 +142,19 @@ git reset HEAD~2
 git reset --hard HEAD~2
 ```
 <br>
+
+## Update Git Repo URL
+- if you want to update the URL for Git repositories
+```
+	git remote set-url origin <url>
+
+	ex:
+  git remote -v
+ 	// origin  git@github.com:<username>/<repo>.git (fetch)
+	// origin  git@github.com:<username>/<repo>.git (push)
+
+	git remote set-url origin https://<username>@bitbucket.org/<repo>.git
+	git remote -v
+	// origin  https://<username>@bitbucket.org/<repo>.git (fetch)
+	// origin  https://<username>@bitbucket.org/<repo>.git (push)
+```

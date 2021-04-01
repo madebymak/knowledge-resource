@@ -18,3 +18,17 @@ $('some-class').on('click', function() {
 }
 ```
 <br>
+
+## Ajax Call
+```
+// POST
+$.post('url', {
+	// data
+})
+.done(function () {
+	console.log("success");
+})
+.fail(function () {
+	console.log("error");
+});
+```

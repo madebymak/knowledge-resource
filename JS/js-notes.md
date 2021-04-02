@@ -475,3 +475,12 @@ obj_prop = 'name';
 console.log(user[obj_prop]) // Jon Doe
 ```
 <br>
+
+## Filter Falsy Values
+```
+const arr = ['', 1, undefined, 6];
+const filterArr = arr.filter(Boolean);
+
+console.log(filterArr) // [1,6]
+```
+<br>

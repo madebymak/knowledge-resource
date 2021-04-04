@@ -32,3 +32,21 @@ $.post('url', {
 	console.log("error");
 });
 ```
+<br>
+
+## Combine Click & Touch Events
+- bind touch and click events together
+```
+var clickEvent = (function() {
+	if ('ontouchstart' in document.documentElement === true) {
+		return 'touchstart';
+	} else {
+		return 'click';
+	}
+})();
+
+$('.some-element).on(clickEvent, function() {
+	// do something
+});
+```
+<br>

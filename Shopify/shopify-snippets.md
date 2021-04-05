@@ -28,6 +28,9 @@ jQuery.ajax({
 	dataType: 'json'
 });
 
+// alternative way
+jQuery.get('/cart.json')
+
 // fetch api
 fetch('/cart.js', {
         method: 'get'
@@ -58,6 +61,7 @@ jQuery.ajax({
 <br>
 
 - use `/cart/add.js` to add multiple products to cart
+- if product has no variant ids, use id from `{{ productselected_or_first_available_variant.id }}`
 ```
 var data = [
 	{

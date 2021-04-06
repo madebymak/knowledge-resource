@@ -30,6 +30,20 @@ error('log error);
 ```
 <br>
 
+## Console Count
+- count how many times a piece of code executed
+```
+Array.from({ length: 3}).forEach(() => { // creates array [1,2,3]
+	console.count('count');
+	// count: 1
+	// count: 2
+	// count: 3
+});
+
+console.countRest('count'); // resets count
+```
+<br>
+
 ## Template Literal
 - use template string for string concatenation (backticks are important!)
 

@@ -50,3 +50,18 @@ $('.some-element).on(clickEvent, function() {
 });
 ```
 <br>
+
+## Using Arrow Function Syntax
+```
+// normal jQuery
+$button.on('click', function (e) {
+    console.log($(this));
+});
+
+// using arrow function
+$button.on('click', (e) => {
+    var $this = $(e.currentTarget);
+    console.log($this);
+});
+```
+<br>

@@ -488,3 +488,21 @@ body {
 }
 ```
 <br>
+
+## Evenly Spacing Children in Parent
+- use flexbox to spread out children in parent div
+```
+// HTML
+<div class="parent">
+  <p>Item1</p>
+  <p>Item2</p>
+  <p>Item3</p>
+</div>
+
+// CSS
+.parent{
+  display: flex;
+  justify-content: space-between;
+}
+```
+<br>

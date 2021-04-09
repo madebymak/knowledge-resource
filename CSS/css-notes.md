@@ -333,13 +333,19 @@ p {
 ```
 <br>
 
-## Stop Image From Stretching
-- use `object-fit: cover` to stop image stretching
+## Fit Image in Container
+- use `object-fit: contain` to fit the entire image within the container
+- use `object-fit: cover` to fill the container with the image
+- use `object-position: center` to position the image at the center of the container
 ```
-img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover
+.image-contain {
+  object-fit: contain;
+  object-position: center;
+}
+
+.image-cover {
+  object-fit: cover;
+  object-position: right top;
 }
 ```
 <br>

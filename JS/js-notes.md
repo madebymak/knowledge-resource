@@ -498,3 +498,12 @@ const filterArr = arr.filter(Boolean);
 console.log(filterArr) // [1,6]
 ```
 <br>
+
+## Remove Duplicates From Array
+- use built-in `Set` function to create new array without duplicates
+```
+const nums = [1, 2, 2, 3, 1, 2, 4, 5, 4, 2, 6];
+
+[...new Set(nums)] // [1, 2, 3, 4, 5, 6]
+```
+<br>

@@ -65,3 +65,20 @@ $button.on('click', (e) => {
 });
 ```
 <br>
+
+## Get Siblings
+- return all sibling elements of a selector
+```
+// HTML
+	<ul>
+		<li class="start">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+
+// jQuery
+	const siblingVal = $("start").siblings().val();
+
+	console.log(siblingVal) // 2,3,4
+```

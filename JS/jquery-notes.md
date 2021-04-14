@@ -19,6 +19,22 @@ $('some-class').on('click', function() {
 ```
 <br>
 
+## Show/Hide
+```
+<div class="class">
+	// some content
+</div>
+
+// CSS
+.class {
+	display: none;
+}
+
+// jQuery
+$('.class').show();
+```
+<br>
+
 ## Ajax Call
 ```
 // POST

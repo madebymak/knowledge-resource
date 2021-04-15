@@ -92,3 +92,16 @@ if(Checkout && Checkout.$ && Checkout.$.fn) {
 }
 ```
 <br>
+
+## Video Thumb
+- use youtube url as thumb
+```
+{% assign video_url = "https://www.youtube.com/watch?v=r_CPx8qHHu0" %}
+{% assign video_id = video_url | split: "v=" | last %}
+{% assign thumbnail_url = 'http://img.youtube.com/vi/' | append: video_id | append: '/maxresdefault.jpg' %}
+
+<a class="popupVideo" href="{{ video_url }}">
+	<img class="tying-thumb" src="{{ thumbnail_url }}" alt="" />
+</a>
+```
+<br>

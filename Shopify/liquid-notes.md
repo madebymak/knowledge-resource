@@ -105,3 +105,15 @@ if(Checkout && Checkout.$ && Checkout.$.fn) {
 </a>
 ```
 <br>
+
+## Get Product By Handle
+- get product object by handle using `all_products`
+```
+{% assign handle = "product-handle" %}
+{% assign product = all_products[handle] %}
+
+{{ product.title }} // Product Handle
+{{ product.id }} // Product ID
+{{ product.url }} // /products/product-handle
+```
+<br>

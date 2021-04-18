@@ -117,3 +117,15 @@ if(Checkout && Checkout.$ && Checkout.$.fn) {
 {{ product.url }} // /products/product-handle
 ```
 <br>
+
+## Color Modif
+```
+{% style %}
+
+.some-class {
+	background: {{ '#7ab55c' | color_modify: 'alpha', 0.85 }} // rgba(122, 181, 92, 0.85)
+}
+
+{% endstyle %}
+```
+<br>

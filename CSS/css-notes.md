@@ -512,3 +512,15 @@ body {
 }
 ```
 <br>
+
+## CSS Triangles
+```
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #000;
+}
+```
+<br>

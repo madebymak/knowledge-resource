@@ -524,3 +524,15 @@ body {
 }
 ```
 <br>
+
+## Clamp
+- used to set value between an upper and lower limit
+```
+ // clamp(MIN, VAL, MAX)
+
+.some-class {
+	font-size: clamp(14px, 1.8vw, 24px);
+	line-height: clamp(14px, 1.8vw, 29px);
+}
+ ```
+ <br>

@@ -536,3 +536,11 @@ body {
 }
  ```
  <br>
+
+## Lazy Loading
+- most browsers will now wait to load images until they are visible in the view point with lazy loading
+- note: this will affect layout so set the size of the image box using height and width
+```
+<img loading="lazy" style="height: 200px; width: 300px;">
+```
+<br>

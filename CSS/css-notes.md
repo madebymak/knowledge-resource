@@ -423,75 +423,76 @@ p:only-child {
     <label for="checkbox_1">Pure CSS Checkbox</label>
 </div>
 
-// CSS
-body {
-    line-height: 24px;
-    font-size: 16px;
-    box-sizing: border-box;
-}
+<style>
+	body {
+			line-height: 24px;
+			font-size: 16px;
+			box-sizing: border-box;
+	}
 
-.checkbox input[type="checkbox"] {
-    opacity: 0;
-}
+	.checkbox input[type="checkbox"] {
+			opacity: 0;
+	}
 
-.checkbox label {
-    position: relative;
-    display: inline-block;
+	.checkbox label {
+			position: relative;
+			display: inline-block;
 
-    /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-    padding-left: 22px;
-}
+			/*16px width of fake checkbox + 6px distance between fake checkbox and text*/
+			padding-left: 22px;
+	}
 
-.checkbox label::before,
-.checkbox label::after {
-    position: absolute;
-    content: "";
+	.checkbox label::before,
+	.checkbox label::after {
+			position: absolute;
+			content: "";
 
-    /*Needed for the line-height to take effect*/
-    display: inline-block;
-}
+			/*Needed for the line-height to take effect*/
+			display: inline-block;
+	}
 
-/*Outer box of the fake checkbox*/
-.checkbox label::before{
-    height: 16px;
-    width: 16px;
+	/*Outer box of the fake checkbox*/
+	.checkbox label::before{
+			height: 16px;
+			width: 16px;
 
-    border: 1px solid;
-    left: 0px;
+			border: 1px solid;
+			left: 0px;
 
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-     *to vertically center it.
-     */
-    top: 3px;
-}
+			/*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+			*to vertically center it.
+			*/
+			top: 3px;
+	}
 
-/*Checkmark of the fake checkbox*/
-.checkbox label::after {
-    height: 5px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
+	/*Checkmark of the fake checkbox*/
+	.checkbox label::after {
+			height: 5px;
+			width: 9px;
+			border-left: 2px solid;
+			border-bottom: 2px solid;
 
-    transform: rotate(-45deg);
+			transform: rotate(-45deg);
 
-    left: 4px;
-    top: 7px;
-}
+			left: 4px;
+			top: 7px;
+	}
 
-/*Hide the checkmark by default*/
-.checkbox input[type="checkbox"] + label::after {
-    content: none;
-}
+	/*Hide the checkmark by default*/
+	.checkbox input[type="checkbox"] + label::after {
+			content: none;
+	}
 
-/*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked + label::after {
-    content: "";
-}
+	/*Unhide on the checked state*/
+	.checkbox input[type="checkbox"]:checked + label::after {
+			content: "";
+	}
 
-/*Adding focus styles on the outer-box of the fake checkbox*/
-.checkbox input[type="checkbox"]:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
-}
+	/*Adding focus styles on the outer-box of the fake checkbox*/
+	.checkbox input[type="checkbox"]:focus + label::before {
+			outline: rgb(59, 153, 252) auto 5px;
+	}
+</style>
 ```
 <br>
 
@@ -505,11 +506,12 @@ body {
   <p>Item3</p>
 </div>
 
-// CSS
-.parent{
-  display: flex;
-  justify-content: space-between;
-}
+<style>
+	.parent{
+		display: flex;
+		justify-content: space-between;
+	}
+</style>
 ```
 <br>
 
@@ -542,5 +544,44 @@ body {
 - note: this will affect layout so set the size of the image box using height and width
 ```
 <img loading="lazy" style="height: 200px; width: 300px;">
+```
+<br>
+
+## Same Height Columns
+- create column layout with the same height
+```
+// HTML
+<div class="container">
+	<div class="column">
+		<div class="content">
+			// content
+		</div>
+	</div>
+
+	<div class="column">
+		<div class="content">
+			// content
+		</div>
+	</div>
+</div>
+
+<style>
+	.container {
+		display: flex;
+	}
+
+	.column {
+		flex: 1;
+		margin: 0 10px //space between columns
+
+		// layout of each column
+		display: flex;
+		flex-direction: column
+	}
+
+	.content {
+		flex: 1; // matches height with sibling
+	}
+</style>
 ```
 <br>

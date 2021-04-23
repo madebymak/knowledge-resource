@@ -1,0 +1,11 @@
+# Bash Terminal Shortcuts
+- `Ctrl + C` to terminate
+- `Ctrl + Z` to suspend
+- `Ctrl + A` to move to start of line
+- `Ctrl + E` to move to end of line
+- `Ctrl + U` to delete from cursor to start of the line
+- `Ctrl + K` to delete from cursor to end of the line
+- `Ctrl + W` to delete from cursor at the start of the word
+- `Ctrl + D` to delete character under cursor
+- `Ctrl + H` to delete character before cursor
+- `Ctrl + L` to clear screen

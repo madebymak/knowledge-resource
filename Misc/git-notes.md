@@ -123,7 +123,7 @@ git push origin --force --all
 - you can add more files to a previous commit with `--amend`
 ```
 git add <files>
-git commit --amend 
+git commit --amend
 ```
 <br>
 
@@ -158,3 +158,12 @@ git reset --hard HEAD~2
 	// origin  https://<username>@bitbucket.org/<repo>.git (fetch)
 	// origin  https://<username>@bitbucket.org/<repo>.git (push)
 ```
+<br>
+
+## Compare Branches
+- see the difference between branches
+- using `--name-only` will only show the file names and not the changes
+```
+git diff --name-only <branch A> <branch B>
+```
+<br>

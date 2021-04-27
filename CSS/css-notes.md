@@ -585,3 +585,29 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Full Background Container
+- use image as background in div element
+```
+<div class="container">
+	// content
+</div>
+
+<style>
+	.container {
+		background: url('<image path');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		height: 100vh;
+		width: auto;
+	}
+</style>
+```
+<br>

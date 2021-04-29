@@ -611,3 +611,31 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Cookie Banner
+- bottom popup for cookie notfication
+```
+<div class="banner">
+	<div class="banner__content">
+		// content
+	</div>
+</div>
+
+<style>
+	.banner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.banner__content {
+		flex: 1;
+	}
+</style>
+```
+<br>

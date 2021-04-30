@@ -17,10 +17,10 @@
 
 ## Move Line Up/Down
 - `alt + up/down` to move line up/down
+<br>
 
 ## Close Current Pane
 - `cmd + w` to close current pane
-
 <br>
 
 ## Import Path Shortcut
@@ -49,4 +49,9 @@ import styles from '@styles';
 ## Focusing Explorer
 - `cmd + 0` to focus on the explorer file panel
 - navigate using up/down arrows and `enter` to view/open file
+<br>
+
+## Tab Through Open Files
+- use `ctrl + TAB` to switch open tabs
+- you can also use `ctrl + <number>` to switch to a ordered tabs list
 <br>

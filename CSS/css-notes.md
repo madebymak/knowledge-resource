@@ -639,3 +639,40 @@ p:only-child {
 </style>
 ```
 <br>
+
+
+## Play Button Overlay
+```
+<div class="container">
+    <!-- The video element -->
+    <video src="..." />
+
+    <!-- The overlay area -->
+    <div class="container__overlay">
+        <!-- The player button -->
+        ...
+    </div>
+</div>
+
+<style>
+	.container {
+		position: relative;
+	}
+
+	.container__overlay {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		height: 100%;
+		width: 100%;
+
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+</style>
+```
+<br>

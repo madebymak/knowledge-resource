@@ -676,3 +676,30 @@ p:only-child {
 </style>
 ```
 <br>
+
+## FAQ Accordian
+```
+<div class="container">
+	<div class="container__heading">
+		<!-- Question -->
+		...
+		<!-- The toggle icon sticks to the right -->
+		...
+	</div>
+
+	<!-- Answer -->
+</div>
+
+<style>
+.container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.container__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+</style>
+```
+<br>

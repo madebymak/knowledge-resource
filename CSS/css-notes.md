@@ -703,3 +703,37 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Rating Stars
+```
+// uses font awesome icons
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="rating">
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+</div>
+
+<style>
+	.rating {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row-reverse;
+		font-size: 20px;
+	}
+
+	.fa-star {
+		color: yellow;
+		margin: 0 5px;
+	}
+
+	.checked {
+		color: gray;
+	}
+</style>
+```
+<br>

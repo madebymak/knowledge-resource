@@ -737,3 +737,45 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Qty Stepper
+```
+<div class="stepper">
+	<button class="stepper__button">-</button>
+	<div class="stepper__content">
+		<input type="text" class="stepper__input" />
+	</div>
+	<button class="stepper__button">+</button>
+</div>
+
+<style>
+	.stepper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 128px;
+	}
+
+	.stepper__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 32px;
+	}
+
+	.stepper__content {
+		flex: 1;
+	}
+
+	.stepper__input {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+</style>
+
+<script>
+	// use JS to change input qty value
+</script>
+```
+<br>

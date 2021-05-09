@@ -644,14 +644,14 @@ p:only-child {
 ## Play Button Overlay
 ```
 <div class="container">
-    <!-- The video element -->
-    <video src="..." />
+	<!-- The video element -->
+	<video src="..." />
 
-    <!-- The overlay area -->
-    <div class="container__overlay">
-        <!-- The player button -->
-        ...
-    </div>
+	<!-- The overlay area -->
+	<div class="container__overlay">
+			<!-- The player button -->
+			...
+	</div>
 </div>
 
 <style>
@@ -691,15 +691,15 @@ p:only-child {
 </div>
 
 <style>
-.container {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
+	.container {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	}
 
-.container__heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+	.container__heading {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	}
 </style>
 ```
 <br>
@@ -777,5 +777,25 @@ p:only-child {
 <script>
 	// use JS to change input qty value
 </script>
+```
+<br>
+
+## Sticky Header
+```
+<div>
+	<header class="header">
+		// header content
+	</header>
+	<body>
+		// body content
+	</body>
+</div>
+
+<style>
+	.header {
+		position: sticky;
+		top: 0;
+	}
+</style>
 ```
 <br>

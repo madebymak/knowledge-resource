@@ -20,3 +20,11 @@ $slickSlide.each(function (e) {
 })
 ```
 <br>
+
+## Decapitalize String
+```
+const decapitalize = str => `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
+
+decapitalize('HeLLo WorlD');    // 'hello world'
+```
+<br>

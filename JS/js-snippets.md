@@ -36,3 +36,15 @@ const urlPath = url => url.substring(url.lastIndexOf('/') + 1);
 urlPath('http://domain.com/path/to/document');     // 'document'
 ```
 <br>
+
+## Truncate Long String
+```
+const truncateString = (str, maxLimit, suffix) => {
+	return (
+		str.length < maxLimit ? str : `${str.substr(0, str.substr(0, maxLimit - suffix.length).lastIndexOf(' '))}${suffix}`
+	)
+}
+
+console.log(truncateString('This is a long message', 20, '...')); // This is a long...
+```
+<br>

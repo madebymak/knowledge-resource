@@ -28,3 +28,11 @@ const decapitalize = str => `${str.charAt(0).toLowerCase()}${str.slice(1)}`;
 decapitalize('HeLLo WorlD');    // 'hello world'
 ```
 <br>
+
+## Get Path From URL
+```
+const urlPath = url => url.substring(url.lastIndexOf('/') + 1);
+
+urlPath('http://domain.com/path/to/document');     // 'document'
+```
+<br>

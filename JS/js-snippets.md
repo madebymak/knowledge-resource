@@ -48,3 +48,12 @@ const truncateString = (str, maxLimit, suffix) => {
 console.log(truncateString('This is a long message', 20, '...')); // This is a long...
 ```
 <br>
+
+## Scroll To Top
+- usually attach to click event
+```
+const goToTop = () => window.scrollTo(0, 0);
+
+goToTop();
+```
+<br>

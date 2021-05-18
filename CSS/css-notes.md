@@ -799,3 +799,35 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Pricing Table
+```
+<div class="container">
+	<div class="container__column">
+		<div class="title">Option 1</div>
+		<div class="price">$99.99</div>
+		<div class="description">Option Package</div>
+		<button>Add To Cart</button>
+	</div>
+	<!-- Repeat columns as needed -->
+</div>
+
+<style>
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container__column {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		flex: 1;
+		margin: 0 8px;
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		border-radius: 4px;
+		max-width: 300px;
+	}
+</style>

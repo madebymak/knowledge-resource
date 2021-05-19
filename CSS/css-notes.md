@@ -831,3 +831,39 @@ p:only-child {
 		max-width: 300px;
 	}
 </style>
+```
+<br>
+
+## Faded Long Text
+```
+<div class="container"
+    <div class="container__content">
+      <!-- insert long text -->
+    </div>
+
+    <!-- The faded overlay at bottom -->
+    <div class="container__fading"></div>
+</div>
+
+<style>
+	.container {
+		position: relative;
+	}
+
+	.container__content {
+		height: 200px;
+		width: 330px;
+		overflow-y: scroll;
+	}
+
+	.container__fading {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 30px;
+		width: 100%;
+		background: linear-gradient(rgba(255, 255, 255, 0.01), #fff);
+	}
+</style>
+```
+<br>

@@ -867,3 +867,25 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Avatar Circle
+```
+<div class="avatar">
+	<img class="avatar__image" src="" />
+</div>
+
+<style>
+	.avatar {
+		border-radius: 50%;
+		height: 64px;
+		width: 64px;
+	}
+
+	.avatar__image {
+		border-radius: 50%;
+		height: 100%;
+		width: 100%;
+	}
+</style>
+```
+<br>

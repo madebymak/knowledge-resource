@@ -889,3 +889,73 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Step Wizard
+- useful to step progress
+```
+<div class="wizard">
+  <div class="wizard__step">
+		<div class="wizard__dot">
+			<div class="wizard__connector"></div
+			<div class="wizard__number">1</div>
+		</div>
+	</div>
+
+	<div class="wizard__step">
+		<div class="wizard__dot">
+			<div class="wizard__connector"></div>
+				<div class="wizard__number">2</div>
+				<div class="wizard__connector"></div>
+		</div>
+	</div>
+
+	<div class="wizard__step">
+		<div class="wizard__dot">
+			<div class="wizard__number">3</div>
+			<div class="wizard__connector"></div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.wizard {
+		display: flex;
+	}
+
+	.wizard__step {
+		flex: 1;
+	}
+
+	.wizard__dot {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.wizard__connector {
+		flex: 1;
+		height: 1px;
+		background-color: rgba(0, 0, 0, .3);
+	}
+
+	.wizard__step:first-child .wizard__connector,
+	.wizard__step:last-child .wizard__connector {
+		background-color: transparent;
+	}
+
+	.wizard__number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		background-color: rgba(0, 0, 0, .3);
+		border-radius: 9999px;
+		height: 32px;
+		width: 32px;
+
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+</style>
+```
+<br>

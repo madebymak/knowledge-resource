@@ -959,3 +959,23 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Fixed Scroll Messag
+```
+<!-- Fixed at the middle of side -->
+<div class="container">
+ Fixed scroll message
+</div>
+
+<style>
+	.container {
+		position: fixed;
+		top: 50%;
+		left: 0;
+		transform: translate(0px, -50%);
+		background: gray;
+		padding: 10px;
+	}
+</style>
+```
+<br>

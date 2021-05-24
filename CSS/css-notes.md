@@ -979,3 +979,45 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Menu Side Drawer
+- use JS/jquery to toggle menu drawer
+```
+<div class="container">
+	<div class="container__overlay"></div>
+	<div class="container__sidebar">
+		<!-- menu items -->
+	</div>
+</div>
+
+<style>
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9999;
+}
+
+.container__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: -1;
+}
+
+.container__sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: #fff;
+}
+</style>
+```
+<br>

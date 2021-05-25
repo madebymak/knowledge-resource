@@ -1021,3 +1021,29 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Custom Carousel Arrows
+```
+<div class="container">
+		<!-- carousel code -->
+		...
+    <!-- use icons if needed instead on text -->
+    <a class="container__box"> < prev</a>
+    <a class="container__box"> next ></a>
+</div>
+
+<style>
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 300px;
+	}
+
+	.container__box {
+		border: 1px solid;
+		padding: 5px;
+	}
+</style>
+```
+<br>

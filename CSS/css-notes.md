@@ -1047,3 +1047,34 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Split Navigation Menu
+```
+<ul class="container">
+	<li>
+		<a href="">Link 1</a>
+		<a href="">Link 2</a>
+		<a href="">Link 3</a>
+	</li>
+
+	<!-- Right corner nav item -->
+	<li class="container__item--right">
+		<a href="">Link 4</a>
+	</li>
+</ul>
+
+<style>
+	.container {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		margin: 0;
+		border: 1px solid;
+	}
+
+	.container__item--right {
+		margin-left: auto;
+	}
+</style>
+```
+<br>

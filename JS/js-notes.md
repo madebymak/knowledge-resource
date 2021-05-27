@@ -507,3 +507,16 @@ const nums = [1, 2, 2, 3, 1, 2, 4, 5, 4, 2, 6];
 [...new Set(nums)] // [1, 2, 3, 4, 5, 6]
 ```
 <br>
+
+## Selecting Elements
+```
+// jQuery equivalent
+$('.some-class');
+
+// JS first instance of element
+document.querySelector('.some-class');
+
+// select all elements
+document.querySelectorAll('.some-class');
+```
+<br>

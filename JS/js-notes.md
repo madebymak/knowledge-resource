@@ -520,3 +520,15 @@ document.querySelector('.some-class');
 document.querySelectorAll('.some-class');
 ```
 <br>
+
+## Applying Function to Element
+```
+// jQuery example
+$(".box").hide();
+
+// JS hide element
+document.querySelectorAll(".box").forEach((box) => {
+	box.style.display = "none";
+});
+```
+<br>

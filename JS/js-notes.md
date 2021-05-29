@@ -526,9 +526,26 @@ document.querySelectorAll('.some-class');
 // jQuery example
 $(".box").hide();
 
-// JS hide element
+// vanilla JS hide element
 document.querySelectorAll(".box").forEach((box) => {
 	box.style.display = "none";
 });
+```
+<br>
+
+##  Traversing DOM
+- selecting parent or sibling element
+```
+// Return the next, previous, and parent element of .box
+// jQuery example
+$(".box").next();
+$(".box").prev();
+$(".box").parent();
+
+// vanilla JS
+var box = document.querySelector(".box");
+box.nextElementSibling;
+box.previousElementSibling;
+box.parentElement;
 ```
 <br>

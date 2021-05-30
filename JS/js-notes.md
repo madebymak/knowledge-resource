@@ -549,3 +549,17 @@ box.previousElementSibling;
 box.parentElement;
 ```
 <br>
+
+## Click Events
+```
+// jQuery
+$('.button').on('click', function(e) {
+	<!-- do something -->
+});
+
+// vanilla JS
+document.querySelector('.button').addEventListener('click', (e) => {
+	<!-- do something -->
+});
+```
+<br>

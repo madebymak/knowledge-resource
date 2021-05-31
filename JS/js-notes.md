@@ -563,3 +563,22 @@ document.querySelector('.button').addEventListener('click', (e) => {
 });
 ```
 <br>
+
+## CSS Styling
+```
+// jQuery
+$(".box").css("color", "#000");
+
+// vanilla JS
+document.querySelector(".box").style.color = "#000";
+
+// jQuery multiple styles
+$(".box").css({
+  "color": "#000",
+  "background-color": "red"
+});
+
+// vanilla JS
+box.style.cssText = "color: #000; background-color: red";
+```
+<br>

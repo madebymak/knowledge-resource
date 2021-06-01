@@ -582,3 +582,15 @@ $(".box").css({
 box.style.cssText = "color: #000; background-color: red";
 ```
 <br>
+
+## Hide/Show Element
+```
+// jQuery
+$(".box").hide();
+$(".box").show();
+
+// vanilla JS
+document.querySelector(".box").style.display = "none";
+document.querySelector(".box").style.display = "block";
+```
+<br>

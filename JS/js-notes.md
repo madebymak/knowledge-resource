@@ -543,7 +543,8 @@ $(".box").prev();
 $(".box").parent();
 
 // vanilla JS
-var box = document.querySelector(".box");
+const box = document.querySelector(".box");
+
 box.nextElementSibling;
 box.previousElementSibling;
 box.parentElement;
@@ -592,5 +593,28 @@ $(".box").show();
 // vanilla JS
 document.querySelector(".box").style.display = "none";
 document.querySelector(".box").style.display = "block";
+```
+<br>
+
+## Document Ready
+```
+// jQuery
+$(document).ready(function() {
+  /* Do something */
+});
+
+// vanilla JS
+// define a callback first
+const ready = (callback) => {
+  if (document.readyState != "loading") {
+	 callback();
+	} else {
+		document.addEventListener("DOMContentLoaded", callback);
+	}
+}
+
+ready(() => {
+  /* do something */
+});
 ```
 <br>

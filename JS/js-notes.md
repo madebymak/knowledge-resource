@@ -618,3 +618,24 @@ ready(() => {
 });
 ```
 <br>
+
+## Classes
+- add, remove and toggle classes
+```
+// jQuery
+$(".box").addClass("focus");
+$(".box").removeClass("focus");
+$(".box").toggleClass("focus");
+
+// vanilla JS
+const box = document.querySelector(".box");
+
+box.classList.add("focus");
+box.classList.remove("focus");
+box.classList.toggle("focus");
+
+// multiple classes
+box.classList.add("focus", "highlighted");
+box.classList.remove("focus", "highlighted");
+```
+<br>

@@ -639,3 +639,17 @@ box.classList.add("focus", "highlighted");
 box.classList.remove("focus", "highlighted");
 ```
 <br>
+
+## Check For Classes
+```
+// jQuery
+if ($(".box").hasClass("focus")) {
+  <!-- do something -->
+}
+
+// vanilla JS
+if (document.querySelector(".box").classList.contains("focus")) {
+  <!-- do something -->
+}
+```
+<br>

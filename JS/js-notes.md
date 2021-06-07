@@ -653,3 +653,16 @@ if (document.querySelector(".box").classList.contains("focus")) {
 }
 ```
 <br>
+
+## Updating DOM
+```
+// jQuery
+$(".button").text("New text");
+
+// vanilla JS
+document.querySelector(".button").textContent = "New text";
+
+// Return the text of the updated element
+document.querySelector(".button").textContent; // Returns "New text"
+```
+<br>

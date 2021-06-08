@@ -666,3 +666,14 @@ document.querySelector(".button").textContent = "New text";
 document.querySelector(".button").textContent; // Returns "New text"
 ```
 <br>
+
+## Add New Element to DOM
+```
+// jQuery
+$(".container").append($("<div/>"));
+
+// vanilla JS
+const element = document.createElement("div");
+document.querySelector(".container").appendChild(element);
+```
+<br>

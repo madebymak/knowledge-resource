@@ -677,3 +677,13 @@ const element = document.createElement("div");
 document.querySelector(".container").appendChild(element);
 ```
 <br>
+
+## Check If an Attribute Exists
+- check if an attribute with a specified name exists
+- returns boolean
+```
+const hasAttr = element.hasAttribute(name);
+
+console.log(hasAttr) // true or false
+```
+<br>

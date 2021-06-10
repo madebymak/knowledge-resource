@@ -687,3 +687,19 @@ const hasAttr = element.hasAttribute(name);
 console.log(hasAttr) // true or false
 ```
 <br>
+
+## Updating Attribute
+```
+// set attr
+element.setAttribute(name,value);
+
+ex:
+element.setAttribute('alt','set image alt');
+
+// remove attr
+element.removeAttribute(name);
+
+ex:
+element.removeAttribute('alt');
+```
+<br>

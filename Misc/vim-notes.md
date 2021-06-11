@@ -2,7 +2,6 @@
 
 ## Exit VIM
 - use `:q` to quit VIM
-
 <br>
 
 ## Insert Mode
@@ -12,7 +11,6 @@
 - `Shift + i` moves to beginning of line
 - `Shift + a` moves to end of line
 - `ESC` to exit out of insert mode (remap `CapsLock` if neccessary)
-
 <br>
 
 ## Cursor Mode
@@ -20,6 +18,11 @@
 - use `hjkl` to move left/down/down/right on lines
 - use `0` to jump to start of line
 - use `$` to jump to end of line
+<br>
+
+### Select All Lines Between Opening and Closing HTML Tags
+- use `vat` to select all lines from opening tag to closing tag
+- only works for HTML tags
 <br>
 
 ### Cut and Paste
@@ -33,6 +36,5 @@
 ## Command Mode
 - use `x` to delete characters under cursor
 - use `r` to replace characters under cursor
-
 <br>
 

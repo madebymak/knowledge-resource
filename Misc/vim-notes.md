@@ -18,6 +18,9 @@
 - use `hjkl` to move left/down/down/right on lines
 - use `0` to jump to start of line
 - use `$` to jump to end of line
+- use `gg` to go to first line of document
+- use `G` to go to last line of document
+
 <br>
 
 ### Select All Lines Between Opening and Closing HTML Tags
@@ -37,4 +40,3 @@
 - use `x` to delete characters under cursor
 - use `r` to replace characters under cursor
 <br>
-

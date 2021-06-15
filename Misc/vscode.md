@@ -40,7 +40,6 @@
 
 // js file
 import styles from '../../../styles/style.css'
-
 // new way
 import styles from '@styles';
 ```
@@ -55,3 +54,8 @@ import styles from '@styles';
 - use `ctrl + TAB` to switch open tabs
 - you can also use `ctrl + <number>` to switch to a ordered tabs list
 <br>
+
+## Open Terminal
+```
+- use ctrl + ` to open/close terminal
+```

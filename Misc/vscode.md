@@ -59,3 +59,21 @@ import styles from '@styles';
 ```
 - use ctrl + ` to open/close terminal
 ```
+<br>
+
+## Shortcut Color Selection
+- you can type `--` instead of `var(...)` when using a declared CSS color variable
+```
+// CSS
+:root {
+	--primary-color: #FFF
+}
+
+.btn-class {
+	background-color: var(--primary-color);
+
+// alternative
+	background-color: --primary-color;
+}
+```
+<br>

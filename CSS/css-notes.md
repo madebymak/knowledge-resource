@@ -1078,3 +1078,20 @@ p:only-child {
 </style>
 ```
 <br>
+
+## Combine Styles With Pseudo Class
+- use `:is` pseudo-class selector to apply the styles for any element that matches the arguments instead of writing separate selectors
+
+```
+header a:hover,
+nav a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+// alternative
+:is(header, nav, footer) a:hover {
+  text-decoration: underline;
+}
+```
+<br>

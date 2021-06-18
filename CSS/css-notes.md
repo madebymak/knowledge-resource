@@ -1095,3 +1095,27 @@ footer a:hover {
 }
 ```
 <br>
+
+## Button Saving Animation
+```
+<button class="">
+	<span class="">
+		Saving
+	</span>
+	<span class="">
+		// icon
+	</span>
+</button>
+
+<style>
+	@keyframe spin {
+		0% {
+			transform: rotate(0);
+		}
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+</style>
+```
+<br>

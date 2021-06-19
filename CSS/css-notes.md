@@ -1119,3 +1119,18 @@ footer a:hover {
 </style>
 ```
 <br>
+
+## Multiple Google Fonts Request
+- use `|` character to combine multiple font requests
+```
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+// alternative
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,700" rel="stylesheet">
+
+// if using Google Font v2
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,600&family=Roboto:wght@400,700" rel="stylesheet">
+```
+<br>

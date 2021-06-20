@@ -1134,3 +1134,20 @@ footer a:hover {
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400,600&family=Roboto:wght@400,700" rel="stylesheet">
 ```
 <br>
+
+## CSS Line Break
+- instead of using a `<br>` tag, we can use the `::after` pseudo element to force a line break after the first element
+```
+<h2>
+	<span class="primary">Tip, tricks, best practices</span>
+	<span>of front-end development</span>
+</h2>
+
+<style>
+.primary::after {
+	content: '\A';
+	white-space: pre;
+}
+</style>
+```
+<br>

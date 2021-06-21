@@ -1151,3 +1151,28 @@ footer a:hover {
 </style>
 ```
 <br>
+
+## Reuse Parent Color Property
+- use `currentColor` to inherit the parent color in a child element if not specified
+```
+div {
+	color: #fff;
+}
+
+div a {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+}
+
+// inherit from parent element using currentColor
+div {
+	color: #fff;
+}
+div a {
+	border-bottom: 1px solid currentColor;
+	color: currentColor;
+	text-decoration: none;
+}
+```
+<br>

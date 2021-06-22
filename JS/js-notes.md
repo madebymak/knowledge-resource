@@ -116,6 +116,25 @@ $button.on('click', (e) => {
 ```
 <br>
 
+## Quick Arrow Function Return
+- to quickly return an object literal in an arrow function, just wrap the object in `()`
+```
+// doesn't work
+const formatName = (first, last) => {
+  full: `${first} ${last}`,
+  short: `${first.charAt(0)} ${last.charAt(0)}`.toUpperCase(),
+};
+
+// work
+const formatName = (first, last) => ({
+  full: ...,
+  short: ...,
+});
+
+formatName('John', 'Doe');  // { full: 'John Doe', short: 'J D' }
+```
+<br>
+
 ## Dom selector (click event)
 ```
 $(e.currentTarget).attr('data-id'); //es6

@@ -58,6 +58,16 @@ console.log(`Show object: ${JSON.stringify(data)}`);
 ```
 <br>
 
+## Workaround Escaping Quotes
+```
+// instead of
+const message = 'It\'s a message';
+
+// use template literal
+const message = `It's a message`;
+```
+<br>
+
 ## Shortcut Conditionals
 - AND operator (&&)
 ```

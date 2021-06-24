@@ -732,3 +732,10 @@ ex:
 element.removeAttribute('alt');
 ```
 <br>
+
+## Prefix JS Naming Class
+- use `js-` prefix for managing the elements in JS that don't have styles
+```
+<span class="js-someClass" name="userId"></span>
+```
+<br>

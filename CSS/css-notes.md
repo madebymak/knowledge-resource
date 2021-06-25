@@ -1176,3 +1176,12 @@ div a {
 }
 ```
 <br>
+
+## Highlight Missing Alt Tags
+- find images with missing alt tags
+```
+img:not([alt]), img[alt=""] {
+	outline: 8px solid red;
+}
+```
+<br>

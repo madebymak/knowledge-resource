@@ -739,3 +739,22 @@ element.removeAttribute('alt');
 <span class="js-someClass" name="userId"></span>
 ```
 <br>
+
+## Convert JSON To String
+- use `JSON.stringify` to convert JSON to a string when exchanging data to/from a web server
+```
+const person = {
+	firstName: 'John',
+	lastName: 'Doe',
+	ages: 42,
+};
+
+JSON.stringify(person);
+// converts JSON object to string
+{
+	"firstName": "John",
+	"lastName": "Doe",
+	"ages": 42
+}
+```
+<br>

@@ -758,3 +758,12 @@ JSON.stringify(person);
 }
 ```
 <br>
+
+## Get Current Timestamp
+- either method will return in milliseconds
+```
+new Date().getTime();
+
+Date.now();
+```
+<br>

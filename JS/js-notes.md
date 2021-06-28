@@ -44,6 +44,20 @@ console.countRest('count'); // resets count
 ```
 <br>
 
+## Conditional Logging
+```
+// instead of
+if (condition) {
+	// Do something
+} else {
+	console.log('Error message');
+}
+
+// alternative
+console.assert(!condition, 'Error message');
+```
+<br>
+
 ## Template Literal
 - use template string for string concatenation (backticks are important!)
 

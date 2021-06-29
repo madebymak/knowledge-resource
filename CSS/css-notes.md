@@ -1185,3 +1185,29 @@ img:not([alt]), img[alt=""] {
 }
 ```
 <br>
+
+## Fixed Corner
+```
+<div class="container">
+	<!-- top left corner -->
+	<div class="container__corner container__corner-left">
+		...
+	</div>
+</div>
+
+<style>
+	.container {
+		position: relative;
+	}
+
+	.container__corner {
+		position: absolute;
+	}
+
+	.container__corner-left {
+		left: 0;
+		top: 0;
+	}
+</style>
+```
+<br>

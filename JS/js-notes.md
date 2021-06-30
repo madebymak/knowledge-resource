@@ -781,3 +781,11 @@ new Date().getTime();
 Date.now();
 ```
 <br>
+
+## Detect Internet Explorer Browser
+```
+const isIE = !!document.documentMode;
+
+console.log({isIE})
+```
+<br>

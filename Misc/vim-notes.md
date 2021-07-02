@@ -20,7 +20,6 @@
 - use `$` to jump to end of line
 - use `gg` to go to first line of document
 - use `G` to go to last line of document
-
 <br>
 
 ### Select All Lines Between Opening and Closing HTML Tags

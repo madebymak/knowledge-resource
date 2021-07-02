@@ -118,12 +118,14 @@ if(Checkout && Checkout.$ && Checkout.$.fn) {
 ```
 <br>
 
-## Color Modif
+## Hex to RGBA
+- use `color_modify` to convert hex to rgba
+- useful for adding transparency to an element
 ```
 {% style %}
 
 .some-class {
-	background: {{ '#7ab55c' | color_modify: 'alpha', 0.85 }} // rgba(122, 181, 92, 0.85)
+	background: {{ '#7ab55c' | color_modify: 'alpha', 0.85 }}; // rgba(122, 181, 92, 0.85)
 }
 
 {% endstyle %}

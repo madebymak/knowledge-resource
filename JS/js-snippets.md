@@ -57,3 +57,12 @@ const goToTop = () => window.scrollTo(0, 0);
 goToTop();
 ```
 <br>
+
+## Emulate Dice Throw
+- randomly selects a number between 1 and 6
+```
+const throwdice = () => ~~(Math.random() * 6) + 1;
+
+throwdice();    // 4
+```
+<br>

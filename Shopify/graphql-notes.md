@@ -25,7 +25,7 @@
 ```
 <br>
 
-## Pagination
+## Pagination (Cursor Based)
 - use `first` to return the first number of results
 - save the last result cursor to `after`
 - use `after` to display results after the saved cursor
@@ -35,7 +35,7 @@
 - you can also use `pageInfo` to check for pages
 ```
 query	($limit: Int, $lastLimit: Int, $beforeCursor: String,	$afterCursor:	String) {
-	products(first:	$limit, last: $lastLimit, before: $beforeCursor,	after:	$afterCursor, sortKey:TITLE)	{
+	products(first:	$limit, last: $lastLimit, before: $beforeCursor, after:	$afterCursor, sortKey:TITLE)	{
 		pageInfo	{
 				hasNextPage
 				hasPreviousPage

@@ -66,3 +66,10 @@ const throwdice = () => ~~(Math.random() * 6) + 1;
 throwdice();    // 4
 ```
 <br>
+
+## Check If Date With Min and Max
+```
+// `min`, `max` and `date` are `Date` instances
+const isBetween = (date, min, max) => (date.getTime() >= min.getTime() && date.getTime() <= max.getTime());
+```
+<br>

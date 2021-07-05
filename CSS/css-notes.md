@@ -1211,3 +1211,47 @@ img:not([alt]), img[alt=""] {
 </style>
 ```
 <br>
+
+## Hover Dropdown
+```
+<div class="dropdown">
+	<!-- The trigger element -->
+	<button>...</button>
+
+	<!-- The content -->
+	<div class="dropdown__content">
+			...
+	</div>
+</div>
+
+<style>
+	.dropdown {
+		position: relative;
+	}
+
+	/* Hide the dropdown's content by default */
+	.dropdown__content {
+		display: none;
+
+		/* Position it right below the trigger element */
+		left: 0;
+		paddingTop: 4px;
+		position: absolute;
+		top: 100%;
+
+		/* It should be on the top of other elements */
+		background-color: #FFF;
+		zindex: 9999;
+
+		/* Size */
+		height: 200px;
+		width: 200px;
+	}
+
+	/* Show the content when hover on the container */
+	.dropdown:hover .dropdown__content {
+			display: block;
+	}
+</style>
+```
+<br>

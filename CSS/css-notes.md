@@ -1255,3 +1255,34 @@ img:not([alt]), img[alt=""] {
 </style>
 ```
 <br>
+
+## Sticky Sections
+- keep each section to top of page while scrolling
+```
+<div class="container">
+	<section class="container__section">
+			...
+	</section>
+
+	<!-- Repeat other sections -->
+	...
+</div>
+
+<style>
+	.container {
+		height: 100%;
+		overflow: scroll;
+	}
+
+	.container__section {
+		/* Take full size */
+		height: 100%;
+		width: 100%;
+
+		/* Stick to the top */
+		position: sticky;
+		top: 0;
+	}
+</style>
+```
+<br>

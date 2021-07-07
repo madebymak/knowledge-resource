@@ -1286,3 +1286,19 @@ img:not([alt]), img[alt=""] {
 </style>
 ```
 <br>
+
+## 3x3 Grid Menu
+```
+<div class="menu">
+	<!-- insert 9 icons -->
+</div>
+
+<style>
+	.menu {
+		display: grid;
+		grid-template-columns: repeat(3, 3.5rem);
+		grid-gap: 0.5rem;
+	}
+</style>
+```
+<br>

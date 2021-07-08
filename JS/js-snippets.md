@@ -73,3 +73,28 @@ throwdice();    // 4
 const isBetween = (date, min, max) => (date.getTime() >= min.getTime() && date.getTime() <= max.getTime());
 ```
 <br>
+
+## Toggle Password Visibility
+```
+<input type="password" id="password" />
+
+<!-- button to show/hide password -->
+<button id="toggle">Toggle</button>
+
+<script>
+	const passwordEle = document.getElementById('password');
+	const toggleEle = document.getElementById('toggle');
+
+	toggleEle.addEventListener('click', function() {
+		const type = passwordEle.getAttribute('type');
+
+		passwordEle.setAttribute(
+				'type',
+				// Switch it to a text field if it's a password field
+				// currently, and vice versa
+				type === 'password' ? 'text' : 'password'
+		);
+	});
+</script>
+```
+<br>

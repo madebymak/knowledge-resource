@@ -98,3 +98,25 @@ const isBetween = (date, min, max) => (date.getTime() >= min.getTime() && date.g
 </script>
 ```
 <br>
+
+## Character Counter
+```
+<textarea maxlength="200" id="message"></textarea>
+<div id="counter"></div>
+
+<script>
+const messageEle = document.getElementById('message');
+const counterEle = document.getElementById('counter');
+
+messageEle.addEventListener('input', function(e) {
+	const target = e.target;
+	const maxLength = target.getAttribute('maxlength');
+
+	// Count the current number of characters
+	const currentLength = target.value.length;
+
+	counterEle.innerHTML = `${currentLength}/${maxLength}`;
+});
+</script>
+```
+<br>

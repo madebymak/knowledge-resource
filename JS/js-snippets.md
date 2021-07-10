@@ -120,3 +120,17 @@ messageEle.addEventListener('input', function(e) {
 </script>
 ```
 <br>
+
+## Replace Broken Images
+```
+// find all image tags on page
+const images = document.querySelectorAll('img');
+
+// loop over them and replace with custom image
+[].forEach.call(images, function(ele) {
+	ele.addEventListener('error', function(e) {
+		e.target.src = '/path/to/404/image.png';
+	});
+});
+```
+<br>

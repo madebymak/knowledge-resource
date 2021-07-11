@@ -134,3 +134,14 @@ const images = document.querySelectorAll('img');
 });
 ```
 <br>
+
+## Detect Mobile Browsers
+- better than checking screen width
+```
+// check if the browser supports the pointer:coarse media query
+const isMobile = function() {
+	const match = window.matchMedia('(pointer:coarse)');
+	return (match && match.matches);
+};
+```
+<br>

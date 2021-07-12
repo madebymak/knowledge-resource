@@ -145,3 +145,13 @@ const isMobile = function() {
 };
 ```
 <br>
+
+## Disable Body Scrolling on Modal
+```
+// disable scrolling on the `body` element when opening a modal
+document.body.style.overflow = 'hidden';
+
+// allow to scroll when closing the modal
+document.body.style.removeProperty('overflow')
+```
+<br>

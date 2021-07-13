@@ -707,6 +707,9 @@ document.querySelector(".button").textContent = "New text";
 
 // Return the text of the updated element
 document.querySelector(".button").textContent; // Returns "New text"
+
+// get element text
+const text = ele.textContent;
 ```
 <br>
 

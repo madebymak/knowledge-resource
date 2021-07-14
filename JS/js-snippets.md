@@ -155,3 +155,13 @@ document.body.style.overflow = 'hidden';
 document.body.style.removeProperty('overflow')
 ```
 <br>
+
+## Detect Click Event Outside Element
+```
+document.addEventListener('click', function(evt) {
+	const isClickedOutside = !ele.contains(evt.target);
+
+	console.log(isClickedOutside) // is true if the clicked target is outside of element
+});
+```
+<br>

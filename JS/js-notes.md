@@ -792,3 +792,9 @@ const isIE = !!document.documentMode;
 console.log({isIE})
 ```
 <br>
+
+## Redirect To Another URL
+```
+location.href = '/newUrl';
+```
+<br>

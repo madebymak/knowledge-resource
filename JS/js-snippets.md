@@ -165,3 +165,26 @@ document.addEventListener('click', function(evt) {
 });
 ```
 <br>
+
+## Edit Input Field
+- clicking the edit button will focus on the text field and move the cursor to the end of it
+```
+<input type="text" id="fullName" />
+
+<button id="edit">Edit</button>
+
+<script>
+	const fullNameEle = document.getElementById('fullName');
+	const editEle = document.getElementById('edit');
+
+	editEle.addEventListener('click', function(e) {
+		// focus on the full name element
+		fullNameEle.focus();
+
+		// move the cursor to the end
+		const length = fullNameEle.value.length;
+		fullNameEle.setSelectionRange(length, length);
+	});
+</script>
+```
+<br>

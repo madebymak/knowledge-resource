@@ -188,3 +188,12 @@ document.addEventListener('click', function(evt) {
 </script>
 ```
 <br>
+
+## Detect MacOS
+- edge case if you ever need to check for Mac related bugs
+```
+const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
+
+console.log(isMacBrowser);
+```
+<br>

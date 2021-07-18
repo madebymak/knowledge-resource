@@ -197,3 +197,14 @@ const isMacBrowser = /Mac|iPod|iPhone|iPad/.test(navigator.platform);
 console.log(isMacBrowser);
 ```
 <br>
+
+## Detect Internet Explorer Browser
+```
+const isIe = function() {
+    const ua = window.navigator.userAgent;
+    return ua.indexOf('MSIE') > -1 || ua.indexOf('Trident') > -1;
+};
+
+console.log(isIe);
+```
+<br>

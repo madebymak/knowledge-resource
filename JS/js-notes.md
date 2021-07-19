@@ -798,3 +798,18 @@ console.log({isIE})
 location.href = '/newUrl';
 ```
 <br>
+
+## Prevent Default Action
+- useful when you want to do stop a default action such redirecting when clicking a link or validating a form before submission
+```
+ele.onclick = function(e) {
+	e.preventDefault();
+	// do something
+};
+
+ele.addEventListener('click', function(e) {
+	e.preventDefault();
+	// do something
+});
+```
+<br>

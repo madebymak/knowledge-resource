@@ -813,3 +813,13 @@ ele.addEventListener('click', function(e) {
 });
 ```
 <br>
+
+## Add Wrapper to Element
+```
+// insert `wrapper` before `ele` in its parent node
+ele.parentNode.insertBefore(wrapper, ele);
+
+// turn `ele` into a children of `wrapper`
+wrapper.appendChild(ele);
+```
+<br>

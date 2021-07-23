@@ -243,3 +243,28 @@ sort(colors);
 */
 ```
 <br>
+
+## Use Emoji As Favicon
+```
+const emojiFavicon = function(emoji) {
+	// create a canvas element
+	const canvas = document.createElement('canvas');
+	canvas.height = 64;
+	canvas.width = 64;
+
+	// get the canvas context
+	const context = canvas.getContext('2d');
+	context.font = '64px serif';
+	context.fillText(emoji, 0, 64);
+
+	// get the custom URL
+	const url = canvas.toDataURL();
+
+	// Update the favicon
+	setFavicon(url);
+};
+
+// Usage
+emojiFavicon('🎉');
+```
+<br>

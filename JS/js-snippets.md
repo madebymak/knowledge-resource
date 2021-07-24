@@ -268,3 +268,12 @@ const emojiFavicon = function(emoji) {
 emojiFavicon('🎉');
 ```
 <br>
+
+## Check If Element is Focused
+- useful for hover over text
+```
+const hasFocus = element === document.activeElement;
+
+console.log(hasFocus)
+```
+<br>

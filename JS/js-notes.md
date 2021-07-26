@@ -803,8 +803,12 @@ location.href = '/newUrl';
 ```
 // reload and keep the POST data
 location.reload();
+
+// reload and ignore POST data
+location.href = location.href;
 ```
 <br>
+
 
 ## Prevent Default Action
 - useful when you want to do stop a default action such redirecting when clicking a link or validating a form before submission

@@ -77,3 +77,35 @@ import styles from '@styles';
 }
 ```
 <br>
+
+## Sorting CSS Properties
+- highlight lines, open command palette and search `Sort Lines Ascending/Descending`
+
+```
+// unsorted
+.some-css-class {
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+	padding: 30px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: flex-end
+}
+
+// sorted ascending
+.some-css-class {
+	align-items: flex-end;
+	display: flex;
+	height: 100%;
+	left: 0;
+	margin: 0;
+	padding: 30px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+```
+<br>

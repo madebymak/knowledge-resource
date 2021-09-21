@@ -109,3 +109,7 @@ import styles from '@styles';
 }
 ```
 <br>
+
+## Return to Previous Line
+- use `alt + left arrow` to return to previous line afer scrolling away
+<br>

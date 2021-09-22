@@ -113,3 +113,16 @@ import styles from '@styles';
 ## Return to Previous Line
 - use `alt + left arrow` to return to previous line afer scrolling away
 <br>
+
+## Setting User Snippets
+- add custom commonly used snippets to User Snippets (separated by languages)
+```
+// example of how to set user snippets javascript.json
+"Get element by ID": {
+	"prefix": "getid",
+	"body": "const $el = document.getElementById('$el')",
+	"description": "Get dom element by id"
+}
+```
+- type the prefix (ex: "getid") to autocomplete snippet in editor
+<br>

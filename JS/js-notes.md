@@ -834,3 +834,28 @@ ele.parentNode.insertBefore(wrapper, ele);
 wrapper.appendChild(ele);
 ```
 <br>
+
+## Optional Chaining (?.)
+- helps read the value of a property located deep within a chain of connected objects without having to check that each reference in the chain is valid
+- helps reduce `undefined` errors
+```
+// setting default value
+	let customer = {
+		name: "Dave",
+		details: {
+			age: 26
+		}
+	};
+
+	const customerCity = customer?.city ?? "Unknown city";
+	console.log(customerCity); // Unknown city
+
+// short-circuiting evaluation form
+	let someObj = null;
+	let x = 0;
+
+	let prop = someObj?.[x++];
+
+	console.log(x); // returns 0 as x only increases if someObj exists
+```
+<br>

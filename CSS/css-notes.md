@@ -1302,3 +1302,12 @@ img:not([alt]), img[alt=""] {
 </style>
 ```
 <br>
+
+## Content Visibility
+- skips rendering of element until actually needed (improves performance)
+```
+.some-element {
+		content-visibility: auto;
+}
+```
+<br>

@@ -1,13 +1,21 @@
 # CSS notes
 
 ## CSS Naming Guide
+- use hypens for classes and underscore for IDs
+```
+.some-class {
+	...
+}
+
+#some_id {
+	...
+}
+```
+- use double underscore and hypens for sub classes
 ```
 <container description name>__<parent group name>--<descriptive name>
-```
-<br>
 
-Example:
-```
+ex:
 <div class='box'>
   <div class='box__header'>
     <label class='box__header--title'></label>

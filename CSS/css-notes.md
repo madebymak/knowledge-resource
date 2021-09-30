@@ -1319,3 +1319,17 @@ img:not([alt]), img[alt=""] {
 }
 ```
 <br>
+
+## Flex Gap
+- altenative to using margin or padding around a flex element for spacing
+```
+.container {
+	display: flex;
+
+	gap: 12px;
+	/* can also use */
+	row-gap: 12px;
+	column-gap: 12px;
+}
+```
+<br>

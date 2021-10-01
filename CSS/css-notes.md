@@ -1333,3 +1333,19 @@ img:not([alt]), img[alt=""] {
 }
 ```
 <br>
+
+## Inset
+- shorthand for top, right, bottom, left
+```
+.some-element {
+	//  top, right, bottom, left
+	insert: 10px 20px 30px 40px;
+
+	// y-axis and x-axis
+	insert: 10px 20px;
+
+	// all
+	insert: 10px
+}
+```
+<br>

@@ -859,3 +859,19 @@ wrapper.appendChild(ele);
 	console.log(x); // returns 0 as x only increases if someObj exists
 ```
 <br>
+
+## Logical Assignment
+```
+// assign value only if already falsy
+let x = 0, y = 1
+x ||= 2;
+y ||= 2;
+console.log(x,y) // 2,1
+
+// assign value if truthy
+let a = 0, b = 1;
+a &&= 2;
+b &&= 2;
+console.log(a,b) // 0, 2
+```
+<br>

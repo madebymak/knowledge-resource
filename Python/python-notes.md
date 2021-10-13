@@ -94,3 +94,21 @@ cd server/
 rm -fr .mypy_cache/
 cd ..
 ```
+<br>
+
+## Any Syntax Shorthand
+- returns true if any of the items are true
+```
+numbers = [-3,-2,-1,0,1]
+
+// old
+has_positives = False
+for n in numbers:
+	if n > 0:
+		has_positive = True
+		break
+
+// new
+has_positive = any(n > 0 for n in numbers)
+```
+<br>

@@ -112,3 +112,17 @@ for n in numbers:
 has_positive = any(n > 0 for n in numbers)
 ```
 <br>
+
+## Simplify Sequence Comparison
+- no need to check element of a list
+- aka truth value testing
+```
+// instead of this
+if len(list_of_items) > 0:
+	item_picked = pick_item(list_of_items)
+
+// use this
+if list_of_items:
+	item_picked = pick_item(list_of_items)
+```
+<br>

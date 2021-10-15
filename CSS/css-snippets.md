@@ -15,3 +15,13 @@
 	opacity: 1;
 }
 ```
+
+## Text Gradient
+```
+.text-gradient {
+	background: linear-gradient(90deg, <first color>, <second color>);
+	background-clip: text;
+	color: transparent;
+}
+```
+<br>

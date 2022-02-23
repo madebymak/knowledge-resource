@@ -1,6 +1,30 @@
 
 # Python Notes
 
+## Virtual Environments (virtualenv)
+- allow us to keep project-specific dependencies in a separate place than our global site-packages
+- extremely useful when you have different versions of packages for different projects
+```
+// install virtualenv
+$pip3 install virtualenv
+
+// install as root if needed
+$sudo pip3 install virtualenv
+
+// initialize new environment
+$virtualenv <project name>
+
+// activate virtual environment
+$source <project name>/bin/activate
+
+// activate in Fish shell
+$source <project name>/bin/activate.fish
+
+// exit virtual environment
+$deactivate
+```
+<br>
+
 ## Insert string variable
 ```
 name = 'Dave'`

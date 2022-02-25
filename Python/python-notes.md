@@ -23,7 +23,13 @@ $source <project name>/bin/activate.fish
 // exit virtual environment
 $deactivate
 ```
+Note: python 3.6 has already virtual environment built in
+```
+// initialize new environment with python3
+python3 -m venv <project name>
+```
 <br>
+
 
 ## Insert string variable
 ```
